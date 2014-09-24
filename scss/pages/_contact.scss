@@ -1,0 +1,7 @@
+.contact_stripes{
+	@include skew(-20deg);
+	margin-top: 400px;
+	top:0;
+	position: absolute;
+	z-index: 0;
+}

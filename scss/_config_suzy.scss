@@ -1,0 +1,224 @@
+  // configuration de Suzy
+
+/*
+DEFAULT SETTINGS
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 4,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+*/
+
+
+$susy: (
+  columns: 8,
+  gutters: .15,
+  global-box-sizing: border-box,
+  gutter-position: before,
+
+);
+
+.header{
+	@include container;
+	&>h1{
+		@include span(2);
+	}
+	.navbar{
+		@include span(4 last);
+	}
+	>ul{
+	}
+	.nav{
+		@include span(2);
+	}
+	.nav:first-child{
+		@include span(first 2);
+	}
+}
+
+.content{
+  @include container;
+  svg.title{
+    @include span(6 first);
+    margin-left: span(1);
+  }
+}
+
+.skills{
+  @include container;
+  .boxes{
+    @include span(2);
+  }
+  h2+div.boxes{
+    @include span(first 2);
+  }/*
+  .boxes:nth-child(2n){
+    @include span(last 4);
+  }
+  .boxes:nth-child(2n+1){
+    @include span(first 4);
+  }*/
+  //alignement 2*2
+  
+}
+
+.works{
+  @include container;
+  .boxes{
+    height: 400px;
+    margin-bottom: gutter();
+  }
+  .works_list{
+    @include span(first 6);
+    @include container;
+    .boxes{
+      @include span(4);
+    }
+    .boxes:nth-child(2n+1){
+      @include span(first 4);
+
+    }
+  }
+  .tag_work_list{
+    @include span(last 2);
+  }
+}
+//work list
+.works_list{
+  @include container;
+  .boxes{
+    height: 400px;
+    margin-bottom: gutter();
+  }
+  .works_list{
+    @include container;
+    .boxes{
+      @include span(4);
+    }
+    .boxes:nth-child(2n+1){
+      @include span(first 4);
+
+    }
+  }
+}
+
+content_link{
+  @include span(6);
+}
+
+.content_link{
+  @include span(last 2);
+}
+
+.present{
+  @include container;
+
+}
+
+.main_infos{
+  @include span(first 6);
+  @include container;
+
+}
+.add_infos{
+  @include span(last 2);
+  @include container;
+}
+
+.id{
+  @include span(8);
+  @include container;
+  .profil_main_infos{
+     @include span(last 6);
+  }
+  .profil{
+     @include span(first 2);
+  }
+}
+.text{
+  @include span(8);
+
+}
+.link_add_infos{
+  @include span(first 2);
+}
+
+//contact
+div.contact{
+  @include container;
+  div.id{
+    @include span(first 2);
+  }
+  div.form{
+    @include span(last 6);
+  }
+  div.map{
+    @include span(first 5);
+  }
+  div.adress{
+    @include span(last 3);
+  }
+}
+
+//project
+div.project{
+  @include container;
+  .left{
+    @include span(first 5);
+  }
+  .right{
+    @include span(last 3);
+    @include container;
+  }
+  .desc{
+    @include span(8);
+    padding-right: gutter();
+  }
+  .tag_work_list{
+    @include span(first 6);
+  }
+  .desc_add{
+    @include span(last 6);
+  }
+}
+
+//footer
+
+.footer_infos{
+    @include span(2);
+}
+.footer_infos:first-child{
+    @include span(first 2);
+}
+.footer_infos:last-child{
+    @include span(last 2);
+}
+
+
+
+
+
+

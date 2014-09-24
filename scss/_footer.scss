@@ -1,0 +1,41 @@
+.footer{
+	height: 160px;
+	padding-top: 40px;
+	background-color: $c6;
+	.boxes{
+		margin-bottom: 0;
+	}
+	.footer_infos.boxes{
+		h4{
+			color: $c0;
+			font-size: 1.3em;
+		}
+		p{
+			color: $c2;
+			line-height: 1.1em;
+			span{
+				@include font($header_font);
+				text-transform: uppercase;
+				color: $c1;
+			}
+		}
+		ul{
+			margin: 20px 0 20px 0;
+			padding: 0;
+			width: 100%;
+			height: 50px;
+			float: left;
+				li{
+				float:left;
+				list-style-type: none;
+					a{
+						color:white;
+						font-size: 2em;
+						&:hover{
+							color:$c1;
+						}
+					}
+				}
+			}
+	}
+}

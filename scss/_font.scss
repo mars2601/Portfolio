@@ -1,0 +1,108 @@
+html{
+	font-size: 16px;
+}
+
+@font-face {
+    font-family: Raleway-bold;
+    src: url('../font/Raleway-Bold.otf');
+    font-weight:400;
+}
+
+@mixin font($font){
+	font-family: $font;
+}
+$header_font: proxima-nova-soft;
+$text_font: jubilat;
+$icon_font: fontello;
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?78868579');
+  src: url('../font/fontello.eot?78868579#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?78868579') format('woff'),
+       url('../font/fontello.ttf?78868579') format('truetype'),
+       url('../font/fontello.svg?78868579#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?78868579#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-flash:before { content: '\e800'; } /* '' */
+.icon-right-circled:before { content: '\e801'; } /* '' */
+.icon-angle-circled-right:before { content: '\e802'; } /* '' */
+.icon-angle-right:before { content: '\e803'; } /* '' */
+.icon-right-open:before { content: '\e804'; } /* '' */
+.icon-right-big:before { content: '\e805'; } /* '' */
+.icon-right:before { content: '\e806'; } /* '' */
+.icon-laptop:before { content: '\e807'; } /* '' */
+.icon-cog-alt:before { content: '\e808'; } /* '' */
+.icon-cog:before { content: '\e809'; } /* '' */
+.icon-wrench:before { content: '\e80a'; } /* '' */
+.icon-right-dir:before { content: '\e80b'; } /* '' */
+.icon-tablet:before { content: '\e80c'; } /* '' */
+.icon-mobile:before { content: '\e80d'; } /* '' */
+.icon-rocket:before { content: '\e80e'; } /* '' */
+.icon-desktop:before { content: '\e80f'; } /* '' */
+.icon-lightbulb:before { content: '\e810'; } /* '' */
+.icon-linkedin:before { content: '\e811'; } /* '' */
+.icon-twitter:before { content: '\e812'; } /* '' */
+.icon-pinboard:before { content: '\e813'; } /* '' */
+.icon-pinterest:before { content: '\e814'; } /* '' */
+.icon-pinterest-circled:before { content: '\e815'; } /* '' */
+.icon-gplus:before { content: '\e816'; } /* '' */
+.icon-gplus-circled:before { content: '\e817'; } /* '' */
+.icon-facebook-squared:before { content: '\e818'; } /* '' */
+.icon-facebook-circled:before { content: '\e819'; } /* '' */
+.icon-facebook:before { content: '\e81a'; } /* '' */
+.icon-twitter-circled:before { content: '\e81b'; } /* '' */
+.icon-twitter-1:before { content: '\e81c'; } /* '' */
+.icon-tumblr:before { content: '\e81d'; } /* '' */
+.icon-tumblr-circled:before { content: '\e81e'; } /* '' */
+.icon-linkedin-1:before { content: '\e81f'; } /* '' */
+.icon-linkedin-circled:before { content: '\e820'; } /* '' */
+.icon-instagram:before { content: '\e821'; } /* '' */
+.icon-github:before { content: '\e822'; } /* '' */
+.icon-github-circled:before { content: '\e823'; } /* '' */
+.icon-flickr:before { content: '\e824'; } /* '' */
+.icon-flickr-circled:before { content: '\e825'; } /* '' */
+.icon-calendar:before { content: '\e826'; } /* '' */

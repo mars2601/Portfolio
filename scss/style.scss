@@ -1,0 +1,30 @@
+/**
+Theme Name: MP
+Theme URI: http://wordpress.org/themes/mp
+Author: the WordPress team
+Author URI: http://wordpress.org/
+Description: Mon Portfolio en ligne
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
+Text Domain: twentyfourteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+**/
+
+@import "susy/susy";
+@import "mixin";
+@import "config_suzy";
+@import "color_var";
+@import "font";
+
+@import "normalize";
+@import "header";
+@import "content";
+@import "footer";
+
+body{
+	background-color: rgba(200, 200, 200, 0.5);
+}
