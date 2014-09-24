@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>marcel-pirnay.be</title>
-
-
-	<script src="//use.typekit.net/byh7ayf.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" type="text/css" href="./style.css" />
-	<!--<script type="text/javascript" src="./js/canvas.js"></script>-->
-	<script type="text/javascript" src="./js/modernizr.js"></script>
-
-</head>
-<body>
-	<div class="header">
-	<h1>Marcel Pirnay</h1>
-		<div class="navbar">
-			<ul>
-				<li class="nav"><a href="./index.html">Acceuil</a></li>
-				<li class="nav"><a href="./project.html">Projets</a></li>
-				<li class="nav"><a href="./moi.html">Moi-même</a></li>
-				<li class="nav"><a href="./contact.html">Contact</a></li>
-			</ul>
-		</div>
-	</div>
+<?php get_header(); ?>
 	<div class="content">
 		<div class="presentation">
 			<div class="pres largeur">
@@ -920,47 +895,10 @@
 						
 					</div>
 			</div>
-			<div class="content_link">
-							<div class="border_link">
-								<a href="" class="link works_links">Tous les travaux</a>
-							</div>
+				<div class="content_link">
+						<div class="border_link">
+							<a href="" class="link works_links">Tous les travaux</a>
 						</div>
+					</div>
 			</div>
-		<div class="footer content_box">
-			
-			<div class="footer_infos boxes">
-					<h4>Merci pour la visite</h4>
-					<p>Et à bientot !</p>
-			</div>
-			<div class="footer_infos boxes">
-					<h4>Contact</h4>
-					<p><span>tel: </span> 0478/ 93 42 07</br><span>mail: </span> pirnay.m@gmail.com</p>
-			</div>
-			<div class="footer_infos boxes">
-					<h4>Adresse</h4>
-					<p>Rue Ten-Eycken< 74</br>4850 Plombières</br>BELGIUM</p>
-			</div>
-			<div class="footer_infos boxes">
-					<h4>Me suivre</h4>
-					<ul class="social_media">
-						<li><a href="">
-							<div title="Code: 0xe818" class="the-icons span3"><i class="icon-facebook-squared"></i></div>
-						</a></li>
-						<li><a href="">
-							<div title="Code: 0xe812" class="the-icons span3"><i class="icon-twitter"></i></div>
-						</a></li>
-						<li><a href="">
-							<div title="Code: 0xe821" class="the-icons span3"><i class="icon-instagram"></i></div>
-						</a></li>
-						<li><a href="">
-							<div title="Code: 0xe814" class="the-icons span3"><i class="icon-pinterest"></i></div>
-						</a></li>
-						<li><a href="">
-							<div title="Code: 0xe81f" class="the-icons span3"><i class="icon-linkedin-1"></i></div>
-						</a></li>
-					</ul>
-			</div>	
-		</div>
-	</div>
-</body>
-</html>
+			<?php get_footer(); ?>
