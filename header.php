@@ -14,13 +14,23 @@
 </head>
 <body>
 	<div class="header">
-	<h1>Marcel Pirnay</h1>
-		<div class="navbar">
-			<ul>
-				<li class="nav"><a href="./index.html">Acceuil</a></li>
-				<li class="nav"><a href="./project.html">Projets</a></li>
-				<li class="nav"><a href="./moi.html">Moi-même</a></li>
-				<li class="nav"><a href="./contact.html">Contact</a></li>
-			</ul>
-		</div>
+		<?php
+			$defaults = array(
+				'theme_location'  => 'top',
+				'menu'            => 'ul',
+				'container'       => 'div',
+				'container_class' => 'navbar',
+				'container_id'    => '',
+				'menu_class'      => 'nav',
+				'echo'            => true,
+				'fallback_cb'     => 'wp_page_menu',
+				'link_before'     => '',
+				'link_after'      => '',
+				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'depth'           => 0,
+				'walker'          => ''
+			);
+
+			wp_nav_menu( $defaults );
+		?>	
 	</div>

@@ -43,20 +43,21 @@ $susy: (
 
 .header{
 	@include container;
+//  @include show-grid(overlay);
 	&>h1{
 		@include span(2);
 	}
 	.navbar{
 		@include span(4 last);
 	}
-	>ul{
-	}
 	.nav{
-		@include span(2);
-	}
-	.nav:first-child{
-		@include span(first 2);
-	}
+	   li{
+      @include span(2);
+    }
+    li:first-child{
+      @include span(first 2);
+    }
+  }
 }
 
 .content{
@@ -125,9 +126,6 @@ $susy: (
   }
 }
 
-content_link{
-  @include span(6);
-}
 
 .content_link{
   @include span(last 2);
@@ -189,6 +187,14 @@ div.project{
   .left{
     @include span(first 5);
   }
+  .left+.right+.left{
+    @include span(first 4 );
+    float: left;
+  }
+  .right+.left+.right{
+    @include span(last 4);
+
+  }
   .right{
     @include span(last 3);
     @include container;
@@ -215,10 +221,106 @@ div.project{
 }
 .footer_infos:last-child{
     @include span(last 2);
+    float: left;
 }
 
 
 
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+  .header{
+    .navbar{
+      @include span(first 8);
+      .nav{
+         li{
+          @include span(2);
+        }
+        li:first-child{
+          @include span(first 2);
+        }
+      }
+    }
+  }
+
+  h2{
+    span.line{
+      width: 5%;
+    }
+  }
+  .skills{
+      .boxes:nth-child(2n){
+        @include span(last 4);
+      }
+      .boxes:nth-child(2n+1){
+        @include span(first 4);
+      }
+  }
+.works{
+    .works_list{
+    @include span(first 8);
+    .boxes{
+      @include span(4);
+    }
+    .boxes:nth-child(2n+1){
+      @include span(first 4);
+    }
+  }  
+}
+
+  .content_link{
+    @include span(first 2);
+  }
+  .footer_infos{
+    @include span(4);
+  }
+  .footer_infos:nth-child(2n+1){
+    @include span(first 4);
+  }
+  .footer_infos:last-child{
+    @include span(last 4);
+    float: left;
+}
+}
+
+@media screen and (min-width: 200px) and (max-width: 650px) {
+  .navbar{
+    @include span(6 last);
+  }
+  .skills{
+      .boxes{
+        @include span(first 8);
+      }
+      h2+div.boxes{
+        @include span(first 8);
+      }
+  }
+.works{
+    .works_list{
+    @include span(first 8);
+    .boxes{
+      @include span(8);
+    }
+  }  
+}
+
+
+  .content_link{
+    @include span(first 4);
+  }
+    .content_link{
+    @include span(first 2);
+  }
+  .footer_infos{
+    @include span(4);
+  }
+  .footer_infos:nth-child(2n+1){
+    @include span(first 4);
+  }
+  .footer_infos:last-child{
+    @include span(last 4);
+    float: left;
+  }
+
+}
 
 
 

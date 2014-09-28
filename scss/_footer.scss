@@ -1,5 +1,19 @@
+.footer:before,
+.footer:after {
+    content: " "; /* Bug Opera */
+    display: table; /* Pour que :before contienne le margin-top des éléments enfants */
+}
+
+.footer:after {
+    clear: both;
+}
+
+.footer {
+    *zoom: 1; /* Pour IE 6 et 7 */
+}
 .footer{
-	height: 160px;
+	position:relative;
+	min-height: 100px;
 	padding-top: 40px;
 	background-color: $c6;
 	.boxes{
@@ -11,7 +25,7 @@
 			font-size: 1.3em;
 		}
 		p{
-			color: $c2;
+			color: $c1;
 			line-height: 1.1em;
 			span{
 				@include font($header_font);

@@ -1,9 +1,7 @@
 //project
 .left{
-	height: 1000px;
 	 img{
-    	display: block;
-    	width: 100%;
+    	max-width: 100%;
     	border:1px solid rgba(100, 100, 100, 0.2);
 		border-radius: $border-radius $border-radius $border-radius $border-radius;
     }
@@ -16,21 +14,27 @@
 	}
 	.date{
 		font-style: italic;
-		font-weight: 200;
+		font-weight: 400;
 		color: black;
 		@include font($text_font);
 		display:inline-block;
-		}	
+		}
+
 	.the-icons{
-			color:black;
-			@include font($text_font);
-			display:inline-block;
-			margin-right: 4px;
-			margin-left: -4px;
-				i{
-					color:black;
-				}
-			}
+		color:black;
+		@include font($text_font);
+		display:inline-block;
+		margin-right: 4px;
+		margin-left: -4px;
+		}
+	.desc i{
+		color:black;
+		
+	}
+	p{
+		font-weight: 200;
+
+	}
 	.distand{
 		display: block;
 		width: 50px;
@@ -40,6 +44,13 @@
 	.boxes.left{
 		img{
 			border:none;
+		}
+	}
+	.right{
+		position: relative;
+		img{
+			margin-top:-30px;
+			max-width: 100%;
 		}
 	}		
 }
@@ -63,20 +74,22 @@
 					border-radius:100%;
 					background-color: $c2;
 					font-size: 1.3em;
-					color:$c0;
+					color:$c6;
 					@include transition(all, 0.2s, ease-in-out);
 				}
 				a{
 					text-decoration: none;
-					color:$c0;
+					color:$c6;
 					@include font($header_font);
-					font-size: 1.4em;
 					margin-left: 0;
+					display:block;
 					@include transition(all, 0.2s, ease-in-out);
 				}
 				&:hover .the-icons{
-					background-color: $c0;
-					color: $c1;
+					background-color: $c6;
+					i{
+						color: white;
+					}
 				}
 				&:hover a{
 					margin-left: 10px;
