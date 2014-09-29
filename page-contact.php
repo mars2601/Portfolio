@@ -55,7 +55,6 @@
 						<div class="content_box">
 							<h2><span class="line lt"></span>Me contacter<span class="line rt"></span></h2>
 							<div class="boxes mappy">
-								<div id="form">
 								    <form method="post" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>">
 								      <fieldset>
 								      	<label for="nom">Votre nom et prénom: </label><input type="text" name="nom" size="30" /></br>
@@ -64,13 +63,12 @@
 								      </fieldset>
 								      <fieldset>
 								      	<label for="">Message :</label>
-								     	<textarea name="message" cols="60" rows="10"></textarea>
+								     	<textarea name="message" style="width:100%;	" rows="10"></textarea>
 								      	<p><input type="submit" name="submit" class="link" value="Envoyer" /></p>
 								      </fieldset>
 								      
 								      
 								    </form>
-									
 								</div>
 							</div>
 						</div>

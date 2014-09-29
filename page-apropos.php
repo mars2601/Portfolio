@@ -60,7 +60,7 @@
 						<div class="boxes id">
 							<img src="<?php echo $portrait_url; ?>" alt="portrait">
 						</div>
-						<div class="boxes form">
+						<div class="boxes infos_about">
 							<h3><?php echo get_field('h3'); ?></h3>
 							<p><?php echo the_content(); ?></p>
 						</div>

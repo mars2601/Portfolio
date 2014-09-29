@@ -305,6 +305,10 @@ div.add_contact div.adress {
 }
 
 form {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -320,9 +324,10 @@ form fieldset:first-child {
   margin-left: 0;
 }
 form fieldset + fieldset {
-  width: 36.46409%;
-  float: right;
-  margin-left: 1.65746%;
+  width: 61.87845%;
+  float: left;
+  margin-left: 0;
+  color: red;
 }
 
 div.project {
@@ -401,6 +406,27 @@ div.project .desc_add {
   float: left;
 }
 
+.contact .moi {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .moi:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contact .moi .id {
+  width: 23.75691%;
+  float: left;
+  margin-left: 0;
+}
+.contact .moi .infos_about {
+  width: 74.58564%;
+  float: right;
+  margin-left: 1.65746%;
+}
+
 @media screen and (min-width: 650px) and (max-width: 1000px) {
   h2 span.line {
     width: 5%;
@@ -431,6 +457,69 @@ div.project .desc_add {
     width: 49.17127%;
     float: left;
     margin-left: 0;
+  }
+
+  div.project {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.project:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  div.project .left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .left + .right + .left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+  div.project .right + .left + .right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.project .right:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  div.project .desc {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 1.65746%;
+  }
+  div.project .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .desc_add {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .content_link {
@@ -466,6 +555,56 @@ div.project .desc_add {
     margin-left: 1.65746%;
     float: left;
   }
+
+  form {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  form fieldset:first-child {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  form fieldset + fieldset {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact .moi {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact .moi:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .contact .moi .id {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .contact .moi .id img {
+    margin-top: 0;
+  }
+  .contact .moi .infos_about {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 650px) {
   .skills .boxes {
@@ -485,6 +624,74 @@ div.project .desc_add {
     margin-left: 0;
   }
   .works .works_list .boxes {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+
+  div.project {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.project:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  div.project .left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .left + .right + .left {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+  }
+  div.project .right + .left + .right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .right {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.project .right:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  div.project .desc {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 1.65746%;
+  }
+  div.project .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  div.project .desc_add {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -514,6 +721,56 @@ div.project .desc_add {
     float: right;
     margin-left: 1.65746%;
     float: left;
+  }
+
+  form {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  form fieldset:first-child {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  form fieldset + fieldset {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact .moi {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact .moi:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .contact .moi .id {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .contact .moi .id img {
+    margin-top: 0;
+  }
+  .contact .moi .infos_about {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 html {
@@ -1314,7 +1571,6 @@ h2 span.rt {
   }
 }
 .boxes {
-  min-height: 200px;
   position: relative;
   z-index: 1;
   border-radius: 4px 4px 4px 4px;
@@ -1385,6 +1641,7 @@ h2 span.rt {
   text-align: left;
   color: white;
   font-weight: 200;
+  min-height: 150px;
 }
 .skills p span {
   display: block;
@@ -1561,84 +1818,53 @@ h3, h4 {
   }
 
   .name_desc h1 {
-    font-size: 4.7em;
+    font-size: 4.4em;
   }
   .name_desc .domain {
     padding-bottom: 100px;
     font-family: "proxima-nova-soft";
-    font-size: 3.7em;
+    font-size: 2.5em;
   }
   .name_desc .domain span {
-    font-size: 0.4em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 650px) {
+  h2 {
+    font-size: 1.2em;
+  }
+  h2 span {
+    width: 2%;
+  }
+
   .name_desc h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .name_desc .domain {
     padding-bottom: 100px;
     font-family: "proxima-nova-soft";
-    font-size: 3.5em;
+    font-size: 1.2em;
   }
   .name_desc .domain span {
-    font-size: 0.3em;
+    font-size: 1em;
   }
 }
-/*.present_stripes{
-	@include skew(20deg);
-	margin-top: 400px;
-	top:0;
-	position: absolute;
-	z-index: 0;
+.id {
+  margin-top: -20px;
 }
-.present{
-	.main_infos{
-	}
-	.profil_text_infos{
-		height: 600px;
-	}
-	.profil{
-		height: 300px;
-		background-color: red;
-		position:relative;
-		z-index: 1;
-	}
-	.profil_main_infos{
-		position:relative;
-		z-index: 0;
-	}
-	.boxes.profil_add_infos{
-		height: 700px;
-	}
-	.link_add_infos{
-		position:absolute;
-		z-index:2;
-	}
-	.link{
-	display: block;
-	height:50px;
-	line-height: 50px;
-	width: 100%;
-	color: white;
-    @include font($header_font);
-    font-size: 1.2em;
-	text-align: center;
-	text-decoration: none;
-	border-radius: $border-radius;
-	background-color: white;
-	@include border-shadow(inset, 0, 0, 0, 4px, $col5);
-	@include transition(all, 0.2s, ease-in-out);
-	color: $col5;
-	&:hover{
-		background-color: $col6;
-		color:white;
-		@include border-shadow(inset, 0, 0, 0, 4px, $col6);
-
-
-	}
+.id p {
+  width: 100%;
 }
-}*/
+.id img {
+  width: 100%;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 650px) {
+  .id {
+    margin-top: 10px;
+  }
+}
 .contact {
   background: -moz-linear-gradient(top, rgba(69, 72, 77, 0) 0%, black 100%);
   /* FF3.6+ */
@@ -1680,14 +1906,17 @@ h3, h4 {
   margin-bottom: 0;
 }
 
+form {
+  width: 100%;
+}
 form fieldset {
-  display: block;
   border: none;
   font-size: 1.1em;
   color: black;
   font-family: jubilat;
   font-style: normal;
   font-weight: 200;
+  padding: 0;
 }
 form fieldset br + label {
   margin-top: 10px;
@@ -1699,9 +1928,12 @@ form fieldset label {
   font-size: 1.2em;
 }
 form fieldset input[type="text"], form fieldset textarea {
+  display: block;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 4px 4px 4px 4px;
   border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 form fieldset .link {
   border: none;
@@ -1815,6 +2047,67 @@ form fieldset .link {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1000px) {
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+  .works .tag_work_list .tag_work ul {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works .tag_work_list .tag_work ul:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .works .tag_work_list .tag_work ul li {
+    width: 23.75691%;
+    float: right;
+    margin-left: 1.65746%;
+  }
+  .works .tag_work_list .tag_work ul li:first-child {
+    width: 23.75691%;
+    float: left;
+    margin-left: 0;
+  }
+  .works .tag_work_list .tag_work ul li .the-icons {
+    padding: 4px;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .works .boxes {
+    min-height: auto;
+  }
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+  }
+  .works .tag_work_list .tag_work ul {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .works .tag_work_list .tag_work ul:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  .works .tag_work_list .tag_work ul li {
+    width: 49.17127%;
+    float: right;
+    margin-left: 1.65746%;
+  }
+  .works .tag_work_list .tag_work ul li:nth-child(2n+1) {
+    width: 49.17127%;
+    float: left;
+    margin-left: 0;
+  }
+}
 .top_wrapper {
   padding-top: 100px;
 }

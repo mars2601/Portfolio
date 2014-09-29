@@ -103,7 +103,6 @@ h2{
 	}
 }
 .boxes{
-	min-height: $h_boxes_1;
 	//background-color: rgba(255, 255, 255, 0.1);
 	position:relative;
 	z-index: 1;
@@ -165,6 +164,7 @@ h2{
     	text-align: left;
     	color:$c0;
     	font-weight:200;
+    	min-height: 150px;
     	span{
     		display:block;
     		color: $c2;
@@ -317,31 +317,37 @@ h2{
  	.name_desc{
 	h1{
 
-	font-size: 4.7em;
+	font-size: 4.4em;
 	}
 	.domain{
 		padding-bottom: 100px;
 		@include font($header_font);
-		font-size: 3.7em;
+		font-size: 2.5em;
 		span{
-			font-size: 0.4em;
+			font-size: 1em;
 		}
 	}
 }
 }
 
 @media screen and (max-width: 650px) {
+	h2{
+		font-size: 1.2em;
+		span{
+	    	width: 2%;
+	    }
+	}
 	.name_desc{
 	h1{
 
-	font-size: 4em;
+	font-size: 3em;
 	}
 	.domain{
 		padding-bottom: 100px;
 		@include font($header_font);
-		font-size: 3.5em;
+		font-size: 1.2em;
 		span{
-			font-size: 0.3em;
+			font-size: 1em;
 		}
 	}
 }

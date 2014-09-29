@@ -58,7 +58,7 @@
 								$image1_array = wp_get_attachment_image_src($image1_id, $image1_size);
 								$image1_url = $image1_array[0];
 
-								$page = get_page_by_title( 'voir-realisation' );
+								$page = get_page_by_title( 'voir-realisation-2' );
 								$page_voir_realisation_id = $page->ID;
 								$page1 = get_page_by_title( 'realisations' );
 								$page_realisation_id = $page1->ID;
@@ -81,7 +81,7 @@
 			</div>
 				<div class="content_link">
 						<div class="border_link">
-							<a href="<?php echo '../'.get_page_uri( $page_realisation_id ) ?>" class="link works_links">Tous les travaux</a>
+							<a href="<?php echo get_page_uri( $page_realisation_id ) ?>" class="link works_links">Tous les travaux</a>
 						</div>
 					</div>
 			</div>

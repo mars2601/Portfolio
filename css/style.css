@@ -56,8 +56,6 @@ $susy: (
     width: 100%;
     float: right;
     margin-left: 1.65746%; }
-  .header .nav li {
-    display: inline-block; }
 
 .content {
   max-width: 100%;
@@ -261,6 +259,10 @@ div.add_contact {
     margin-left: 1.65746%; }
 
 form {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
@@ -272,10 +274,11 @@ form {
     width: 36.46409%;
     float: left;
     margin-left: 0; }
-  form fieldset + fieldset {
-    width: 36.46409%;
-    float: right;
-    margin-left: 1.65746%; }
+  form fieldset:last-child {
+    width: 87.29282%;
+    float: left;
+    margin-left: 0;
+    color: red; }
 
 div.project {
   max-width: 100%;
@@ -375,7 +378,8 @@ div.project {
     position: relative;
     right: auto; }
     .works .content_link .link {
-      position: relative; }
+      position: relative;
+      bottom: 0px; }
 
   .footer_infos {
     width: 49.17127%;
@@ -391,7 +395,18 @@ div.project {
     width: 49.17127%;
     float: right;
     margin-left: 1.65746%;
-    float: left; } }
+    float: left; }
+
+  /*form{
+    @include container;
+    fieldset:first-child{
+      @include span( 8);
+    }
+    fieldset+fieldset{
+      @include span(8);
+    }
+   }
+  */ }
 @media screen and (min-width: 200px) and (max-width: 650px) {
   .skills .boxes {
     width: 100%;
@@ -411,6 +426,15 @@ div.project {
       float: left;
       margin-left: 0;
       margin-right: 0; }
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0; }
+
+  .content_link {
+    width: 100%;
+    float: left;
+    margin-left: 0; }
 
   .footer_infos {
     width: 49.17127%;
@@ -430,12 +454,9 @@ div.project {
 html {
   font-size: 16px; }
 
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 15px; } }
 @media screen and (max-width: 650px) {
   html {
-    font-size: 14px; } }
+    font-size: 15.5px; } }
 @font-face {
   font-family: Raleway-bold;
   src: url("./font/Raleway-Bold.otf");
@@ -1004,7 +1025,8 @@ th {
       margin: 0;
       text-align: right; }
       .header .navbar .nav li {
-        list-style-type: none; }
+        list-style-type: none;
+        display: inline-block; }
         .header .navbar .nav li > a {
           text-transform: uppercase;
           font-family: "proxima-nova-soft";
@@ -1024,6 +1046,16 @@ th {
             background-color: #690b1a;
             color: white; }
 
+@media screen and (max-width: 1000px) {
+  .header .navbar .nav li > a {
+    display: block;
+    padding: 15px 15px;
+    font-size: 1.1em; } }
+@media screen and (max-width: 650px) {
+  .header .navbar .nav li {
+    display: block; }
+    .header .navbar .nav li > a {
+      display: block; } }
 .content {
   min-height: 400px; }
   .content .presentation {
@@ -1316,7 +1348,31 @@ h3, h4 {
     position: relative;
     right: auto; }
     .works .content_link .link {
-      position: relative; } }
+      position: relative;
+      bottom: 0; }
+
+  .name_desc h1 {
+    font-size: 4.4em; }
+  .name_desc .domain {
+    padding-bottom: 100px;
+    font-family: "proxima-nova-soft";
+    font-size: 2.5em; }
+    .name_desc .domain span {
+      font-size: 1em; } }
+@media screen and (max-width: 650px) {
+  h2 {
+    font-size: 1.2em; }
+    h2 span {
+      width: 2%; }
+
+  .name_desc h1 {
+    font-size: 3em; }
+  .name_desc .domain {
+    padding-bottom: 100px;
+    font-family: "proxima-nova-soft";
+    font-size: 1.2em; }
+    .name_desc .domain span {
+      font-size: 1em; } }
 /*.present_stripes{
 	@include skew(20deg);
 	margin-top: 400px;
@@ -1405,29 +1461,34 @@ h3, h4 {
 .mappy {
   margin-bottom: 0; }
 
-form fieldset {
-  display: block;
-  border: none;
-  font-size: 1.1em;
-  color: black;
-  font-family: jubilat;
-  font-style: normal;
-  font-weight: 200; }
-  form fieldset br + label {
-    margin-top: 10px; }
-  form fieldset label {
-    display: block;
-    margin-top: 10px;
-    padding: 5px 0;
-    font-size: 1.2em; }
-  form fieldset input[type="text"], form fieldset textarea {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 4px 4px 4px 4px;
-    border: 1px solid rgba(0, 0, 0, 0.4); }
-  form fieldset .link {
+form {
+  width: 100%; }
+  form fieldset {
     border: none;
-    width: 50%;
-    font-size: 1.2em; }
+    font-size: 1.1em;
+    color: black;
+    font-family: jubilat;
+    font-style: normal;
+    font-weight: 200;
+    padding: 0; }
+    form fieldset br + label {
+      margin-top: 10px; }
+    form fieldset label {
+      display: block;
+      margin-top: 10px;
+      padding: 5px 0;
+      font-size: 1.2em; }
+    form fieldset input[type="text"], form fieldset textarea {
+      display: block;
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 4px 4px 4px 4px;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      width: 100%; }
+    form fieldset .link {
+      border: none;
+      width: 50%;
+      font-size: 1.2em; }
 
 .left img {
   max-width: 100%;
@@ -1514,6 +1575,53 @@ form fieldset {
   color: black;
   text-transform: uppercase; }
 
+@media screen and (max-width: 1000px) {
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0; }
+    .works .tag_work_list .tag_work ul {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .works .tag_work_list .tag_work ul:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .works .tag_work_list .tag_work ul li {
+        width: 23.75691%;
+        float: right;
+        margin-left: 1.65746%; }
+        .works .tag_work_list .tag_work ul li:first-child {
+          width: 23.75691%;
+          float: left;
+          margin-left: 0; }
+        .works .tag_work_list .tag_work ul li .the-icons {
+          padding: 4px;
+          font-size: 1em; } }
+@media screen and (max-width: 650px) {
+  .works .boxes {
+    min-height: auto; }
+  .works .tag_work_list {
+    width: 100%;
+    float: left;
+    margin-left: 0; }
+    .works .tag_work_list .tag_work ul {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .works .tag_work_list .tag_work ul:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .works .tag_work_list .tag_work ul li {
+        width: 49.17127%;
+        float: right;
+        margin-left: 1.65746%; }
+        .works .tag_work_list .tag_work ul li:nth-child(2n+1) {
+          width: 49.17127%;
+          float: left;
+          margin-left: 0; } }
 .top_wrapper {
   padding-top: 100px; }
 
@@ -1575,3 +1683,23 @@ form fieldset {
           color: #d13d58;
           background-color: red;
           border-bottom: 2px solid red; }
+
+@media screen and (max-width: 650px) {
+  .footer {
+    min-height: 80px; }
+    .footer .footer_infos.boxes h4 {
+      color: white;
+      font-size: 1.3em; }
+    .footer .footer_infos.boxes p {
+      color: #d13d58;
+      line-height: 1.1em; }
+      .footer .footer_infos.boxes p span {
+        font-family: "proxima-nova-soft";
+        text-transform: uppercase;
+        color: #d13d58; }
+    .footer .footer_infos.boxes ul {
+      margin: 10px 0 10px 0;
+      width: 100%;
+      height: 40px; }
+      .footer .footer_infos.boxes ul li {
+        margin: 0 5px; } }

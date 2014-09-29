@@ -173,12 +173,14 @@ div.add_contact{
   }
 }
 form{
+   @include span(8);
   @include container;
   fieldset:first-child{
     @include span(first 3);
   }
   fieldset+fieldset{
-    @include span(last 3);
+    @include span(first 5);
+    color: red;  
   }
  }
 
@@ -224,7 +226,17 @@ div.project{
     @include span(last 2);
     float: left;
 }
-
+.contact{
+  .moi{
+    @include container;
+    .id{
+       @include span(first 2);
+    }
+    .infos_about{
+       @include span(last 6);
+    }
+  }
+}
 
 
 @media screen and (min-width: 650px) and (max-width: 1000px) {
@@ -254,6 +266,36 @@ div.project{
   }  
 }
 
+//project
+div.project{
+  @include container;
+  .left{
+    @include span(8);
+  }
+  .left+.right+.left{
+    @include span(8);
+    float: left;
+  }
+  .right+.left+.right{
+    @include span(8);
+
+  }
+  .right{
+    @include span(8);
+    @include container;
+  }
+  .desc{
+    @include span(8);
+    padding-right: gutter();
+  }
+  .tag_work_list{
+    @include span(8);
+  }
+  .desc_add{
+    @include span(8);
+  }
+}
+
   .content_link{
     @include span(first 4);
   }
@@ -276,7 +318,33 @@ div.project{
   .footer_infos:last-child{
     @include span(last 4);
     float: left;
-}
+  }
+form{
+  @include container;
+  fieldset:first-child{
+    @include span( 8);
+  }
+  fieldset+fieldset{
+    @include span(8);
+  }
+ }
+.contact{
+  .moi{
+    @include container;
+    .id{
+       @include span(8);
+       text-align: center;
+       img{
+        margin-top: 0;
+       }
+    }
+    .infos_about{
+       @include span(8);
+    }
+  }
+ }
+ 
+
 }
 
 @media screen and (min-width: 200px) and (max-width: 650px) {
@@ -294,10 +362,44 @@ div.project{
     .boxes{
       @include span(8);
     }
-  }  
+  }
+   .tag_work_list{
+    @include span(first 8);
+  }
+
 }
 
-.content_link{
+//project
+div.project{
+  @include container;
+  .left{
+    @include span(8);
+  }
+  .left+.right+.left{
+    @include span(8);
+    float: left;
+  }
+  .right+.left+.right{
+    @include span(8);
+
+  }
+  .right{
+    @include span(8);
+    @include container;
+  }
+  .desc{
+    @include span(8);
+    padding-right: gutter();
+  }
+  .tag_work_list{
+    @include span(8);
+  }
+  .desc_add{
+    @include span(8);
+  }
+}
+
+  .content_link{
     @include span(first 8);
   }
   .footer_infos{
@@ -310,8 +412,29 @@ div.project{
     @include span(last 4);
     float: left;
   }
+  form{
+  @include container;
+  fieldset:first-child{
+    @include span(8);
+  }
+  fieldset+fieldset{
+    @include span(8);
+  }
+ }
 
+ .contact{
+  .moi{
+    @include container;
+    .id{
+       @include span(8);
+       text-align: center;
+       img{
+        margin-top: 0;
+       }
+    }
+    .infos_about{
+       @include span(8);
+    }
+  }
+ }
 }
-
-
-

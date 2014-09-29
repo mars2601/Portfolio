@@ -2,6 +2,28 @@
 	<div class="content">
 			<div class="works works_list content_box">
 			<h2><span class="line lt"></span>Mes réalisations <span class="line rt"></span></h2>
+			<div class="tag_work_list">
+				<h3>Trier par tags</h3>
+				<div class="tag_work boxes">
+					<ul>
+						<?php 
+							$tags = get_terms('tags');
+							$page_tags = '59';
+							if($tags){
+								foreach ($tags as $t) {
+									?>
+										<li>
+											<a href="<?php echo get_page_uri( $page_tags ); ?>?tag_id=<?php echo $t->term_id; ?>">
+												<div title="Code:" class="the-icons span3"><i class="icon-<?php echo $t->description ?>"></i></div>
+											<?php echo $t->name; ?></a>
+										</li>
+									<?php
+								}
+							}
+						?>
+					</ul>
+				</div>
+			</div>
 			<div class="works_list">
 				<?php 
 						$the_query = new WP_Query( 'post_type=realisations' );
@@ -35,28 +57,7 @@
 				wp_reset_postdata();
 				?>
 			</div>
-			<div class="tag_work_list">
-				<h3>Trier par tags</h3>
-				<div class="tag_work boxes">
-					<ul>
-						<?php 
-							$tags = get_terms('tags');
-							$page_tags = '59';
-							if($tags){
-								foreach ($tags as $t) {
-									?>
-										<li>
-											<a href="<?php echo get_page_uri( $page_tags ); ?>?tag_id=<?php echo $t->term_id; ?>">
-												<div title="Code:" class="the-icons span3"><i class="icon-<?php echo $t->description ?>"></i></div>
-											<?php echo $t->name; ?></a>
-										</li>
-									<?php
-								}
-							}
-						?>
-					</ul>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 <?php get_footer(); ?>

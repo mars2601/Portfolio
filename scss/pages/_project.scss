@@ -112,5 +112,50 @@
 }
 
 
+@media screen and (max-width: 1000px) {
+.works{
+	.tag_work_list{
+	   		@include span(first 8);
+		.tag_work{
+			ul{
+	    	@include container;
+				li{
+	   				@include span(last 2);
+	   				&:first-child{
+	   					@include span(first 2);
+	   				}
+	   				.the-icons{
+	   					padding: 4px;
+	   					font-size: 1em;
+					}
+				}
+			}
+		}
+	}
+}
 
+}
+@media screen and (max-width: 650px) {
+	.works{
+		.boxes{
+			min-height: auto;
+		}
+	.tag_work_list{
+	   		@include span(first 8);
+		.tag_work{
+			ul{
+	    	@include container;
+				li{
+	   				@include span(last 4);
+	   				&:nth-child(2n+1){
+	   					@include span(first 4);
+	   				}
+	   				.the-icons{
+					}
+				}
+			}
+		}
+	}
+}	
+}
 
