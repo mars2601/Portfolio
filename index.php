@@ -75,11 +75,13 @@
 					<?php 
 							}
 						}
+				wp_reset_postdata();
+						
 					?>
 			</div>
 				<div class="content_link">
 						<div class="border_link">
-							<a href="<?php echo get_page_uri( $page_realisation_id ) ?>" class="link works_links">Tous les travaux</a>
+							<a href="<?php echo '../'.get_page_uri( $page_realisation_id ) ?>" class="link works_links">Tous les travaux</a>
 						</div>
 					</div>
 			</div>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+ <?php get_header(); ?>
 <?php 
 
 	$tag_id = $_GET['tag_id'];

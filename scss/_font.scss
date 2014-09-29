@@ -1,6 +1,12 @@
 html{
 	font-size: 16px;
 }
+@media screen and (max-width: 650px) {
+  html{
+  font-size: 15.5px;
+}
+}
+
 
 @font-face {
     font-family: Raleway-bold;
@@ -12,8 +18,10 @@ html{
 	font-family: $font;
 }
 $header_font: "proxima-nova-soft";
+$header1_font : "aw-conqueror-inline";
 $text_font: jubilat;
 $icon_font: fontello;
+
 
 @font-face {
   font-family: 'fontello';
