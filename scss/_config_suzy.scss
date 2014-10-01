@@ -244,7 +244,7 @@ div.project{
 }
 
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+/*@media screen and (min-width: 700px) and (max-width: 1000px) {
 
   h2{
     span.line{
@@ -350,9 +350,9 @@ form{
  }
  
 
-}
+}*/
 
-@media screen and (min-width: 200px) and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .skills{
       .boxes{
         @include span(first 8);
@@ -363,8 +363,12 @@ form{
   }
 .works{
     .works_list{
-    @include span(first 8);
+    @include span(8);
     .boxes{
+      @include span(8);
+      margin-top: 20px;
+    }
+    .boxes:nth-child(2n+1){
       @include span(8);
     }
   }
@@ -408,14 +412,13 @@ div.project{
     @include span(first 8);
   }
   .footer_infos{
-    @include span(4);
+    @include span(8);
   }
   .footer_infos:nth-child(2n+1){
-    @include span(first 4);
+    @include span(first 8);
   }
   .footer_infos:last-child{
-    @include span(last 4);
-    float: left;
+    @include span(first 8);
   }
   form{
   @include container;

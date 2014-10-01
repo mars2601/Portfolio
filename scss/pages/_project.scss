@@ -127,7 +127,7 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
 .works{
 	.tag_work_list{
 	   		@include span(first 8);
@@ -159,22 +159,27 @@
 		}
 	}
 }
-
 }
-@media screen and (max-width: 700px) {
+*/
+
+@media screen and (max-width: 1000px) {
 	.works{
 		.boxes{
 			min-height: auto;
+			p{
+				font-size: 1.3em;
+			}
 		}
 	.tag_work_list{
 	   		@include span(first 8);
 		.tag_work{
 			ul{
+			font-size: 1.5em;
 	    	@include container;
 				li{
-	   				@include span(last 4);
+	   				@include span(last 8);
 	   				&:nth-child(2n+1){
-	   					@include span(first 4);
+	   					@include span(first 8);
 	   				}
 	   				.the-icons{
 					}
@@ -182,6 +187,9 @@
 			}
 		}
 	}
-}	
+}
+.project, .moi{
+		font-size:1.3em;	
+	}
 }
 

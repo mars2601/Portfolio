@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div class="content">
 		<div class="project content_box">
-			<div class="project">
+			<div>
 				<?php 
 					$post_id = $_GET['post_id'];
 					$args = array(
@@ -68,7 +68,7 @@
 														<span class="distand"></span>
 														<p><?php the_field('paragraphe'); ?></p>
 														<div class="share">
-															<a href="//fr.pinterest.com/pin/create/button/?url=<?php echo the_permalink(); ?>"&media="<?php echo $image2_url; ?>&description=<?php the_title(); ?><?php echo ','.the_field('sous-titre').' Pour plus de créations, visitez '.site_url(); ?>" data-pin-do="buttonPin" data-pin-config="none">
+															<!--<a href="//fr.pinterest.com/pin/create/button/?url=<?php echo the_permalink(); ?>"&media="<?php echo $image2_url; ?>&description=<?php the_title(); ?><?php echo ','.the_field('sous-titre').' Pour plus de créations, visitez '.site_url(); ?>" data-pin-do="buttonPin" data-pin-config="none">-->
 															<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" />
 															</a>
 
@@ -97,5 +97,5 @@
 	<script type="text/javascript">
 	window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
 	</script>
-	<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>	
+	<!--<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>-->
 <?php get_footer(); ?>

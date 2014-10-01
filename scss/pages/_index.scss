@@ -92,12 +92,6 @@ h2{
 @media screen and (max-width: 1000px) {
 
 .content_box{
-	@include padding-canvas(20px);
-	position:relative;
-	}
-}
-@media screen and (max-width: 700px) {
-.content_box{
 	@include padding-canvas(10px);
 	position:relative;
 	}
@@ -130,7 +124,7 @@ h2{
 //	background-color:rgba(0, 0, 0, 0.5);
 	margin-top: 30px;
 	.boxes{
-		min-height: 500px;
+		min-height: 550px;
 	}
 	.boxes>.icon{
 		background-color:$c4;
@@ -220,10 +214,14 @@ h2{
     	font-size:1.5em;
     }
     .link_skills{
-    	position: absolute;
+		display: inline-block;
     	bottom: 0;
-    	width: 100%;
+    	margin-top: 30px;
+
     	.link{
+    		position: absolute;
+    		bottom: 0;
+    		right: 0;
     		float: right;
     		margin-right: 20px;
 			font-size:1em;
@@ -259,7 +257,7 @@ h2{
 		height:100%;
 		background-color: none;
 		position: absolute;
-   		@include transform(translate(0, - $h_boxes_2*3/2));
+   		@include transform(translate(0, - $h_boxes_2*2));
 		@include transition(all, 0.2s, ease-in-out);
 		padding-top: 30%;
 		text-align: center;
@@ -388,38 +386,46 @@ h2{
 		}
 	}
 }
-.skills{
-	.boxes{
-		min-height: 400px;
-	}	
 }
 
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 	h2{
-		font-size: 1.2em;
+		font-size: 1.8em;
 		span{
 	    	width: 2%;
+	    	font-size: 2em;
 	    }
 	}
 	.name_desc{
 	h1{
-
-	font-size: 3em;
+		margin-top: 40px;
+		font-size: 3.2em;
+		line-height: 1em;
 	}
 	.domain{
-		padding-bottom: 100px;
+		padding-bottom: 50px;
+		padding-top: 20px;
 		@include font($header_font);
-		font-size: 1.2em;
+		font-size: 2.1em;
 		span{
-			font-size: 1em;
+			display: block;
+			font-size: 0.6em
 		}
 	}
 }
 .skills{
+	font-size: 1.2em;
 	.boxes{
 		min-height: 300px;
+		margin-bottom: 60px;
+		.link_skills{
+			margin-top: 40px;
+		}
 	}	
+	.boxes>.icon{
+		line-height: 240px;
+		width: 240px;
+		height:240px;
+    }
 }
 }

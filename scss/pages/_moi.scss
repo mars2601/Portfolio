@@ -1,17 +1,23 @@
-.id{
-	margin-top: -20px;
-	p{
-		width: 100%;
-	}
-	img{
-		width: 100%;
-		max-width: 250px;
-	}
+	.id{
+		margin-top: -20px;
+		color:$c0;
+		p{
+			width: 100%;
+			color:$c0;
+			font-weight: 200;
+		}
+		img{
+			width: 100%;
+			max-width: 250px;
+		}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 	.id{
 		margin-top:10px;
+		img{
+			max-width: 380px;
+		}
 	}
 }
 div.moi{

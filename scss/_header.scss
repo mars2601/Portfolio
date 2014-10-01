@@ -36,18 +36,112 @@
 @media screen and (max-width: 1000px) {
 		.header{
 		.navbar{
+			padding: 0;
+			font-size: 1.1em;
 			.nav{
-				li{
+				li{	
+					width: 75%;
+					display: block;
 					&>a{
-						display: block;
-						padding: 15px 15px;
-						font-size:1.1em;
 					}
 				}
 			}
 		}
 	}	
+	[id=navigation] + * {
+		position: relative;
+	}
+
+	/* Theming opened nav */	
+	[id=navigation] ul {		
+		
+		/* maximum height */
+		max-height: 25em;
+
+		/* translate with hardware acceleration */
+		-webkit-transform: translateZ(0); 
+		-ms-transform: translateZ(0);
+		        transform: translateZ(0);
+		-webkit-transition: max-height .4s;
+		        transition: max-height .4s;
+
+		/* global styles */
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	[id=navigation] a {
+		display: block;
+		padding: 1.2rem;
+		color: #333;
+		background: #fff;
+		text-decoration: none;
+		margin-bottom: 2px;
+	}
+	[id=navigation] a:hover, 
+	[id=navigation] a:focus,
+	[id=navigation] a:active
+	{
+		background: #eee;
+	}
+	
+	/* Theming closed nav */
+	[id=navigation].is-closed ul {
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	/* Global styling nav button */	
+	[id="toggle-nav"] {
+		position: absolute;
+			top: .8rem; right: 1rem;
+		z-index: 1;
+		height: 30px; width: 30px;
+		background:url('./img/menu.png') no-repeat;
+		background-color: transparent;
+		padding: 0;
+		outline: 0;
+		cursor: pointer;
+		border: none;
+		-webkit-transition: -webkit-transform .2s;
+		        transition: transform .2s;
+	}
+	
+	/*  Removing Firefox's dotted outline on button */	
+	[id="toggle-nav"]::-moz-focus-inner {
+		border: 0;
+	}
+	
+	[id="toggle-nav"]::after, [id="toggle-nav"]::before {
+		position: absolute;
+		-webkit-transition: -webkit-transform .2s;
+		        transition: transform .2s;
+	}
+	[id="toggle-nav"]::before {
+		top: 40%; right: 15%; bottom: 40%; left: 15%;
+	}
+	
+	
+	/* Theming opened nav button */	
+	[id=navigation]:not(.is-closed) [id="toggle-nav"],
+	[id=navigation]:not(.is-closed) [id="toggle-nav"]::before {
+		-webkit-transform: rotate(90deg) translateZ(0);
+		-ms-transform: rotate(90deg) translateZ(0);
+		        transform: rotate(90deg) translateZ(0);
+	}
+
+	/* Hide alternate text except from screen readers */
+	.visually-hidden {
+		position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		overflow: hidden;
+		height: 1px;
+		width: 1px;
+	}
+	
 }
+
+/*
 @media screen and (max-width: 700px) {
 		.header{
 		.navbar{
@@ -61,4 +155,4 @@
 			}
 		}
 	}	
-}
+}*/

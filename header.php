@@ -8,6 +8,7 @@
 	<meta charset="UTF-8">
 	<title><?php bloginfo('name'); ?></title>
     <meta name="description" content="Portfolio de Marcel Pirnay contenant ses projets et réalisations dans le domaine du développement, du web design et">
+	        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 
@@ -26,9 +27,9 @@
 			$defaults = array(
 				'theme_location'  => 'top',
 				'menu'            => 'ul',
-				'container'       => 'div',
+				'container'       => 'nav',
 				'container_class' => 'navbar',
-				'container_id'    => '',
+				'container_id'    => 'navigation',
 				'menu_class'      => 'nav',
 				'echo'            => true,
 				'fallback_cb'     => 'wp_page_menu',
@@ -42,5 +43,21 @@
 			wp_nav_menu( $defaults );
 			wp_reset_postdata();
 
-		?>	
+		?>
+		<script>
+			var n = document.getElementById('navigation');
+			n.classList.add('is-closed');
+			function navi() {
+				if (window.innerWidth<1000 && document.getElementById("toggle-nav")==undefined) {			
+					n.insertAdjacentHTML('afterBegin','<button id="toggle-nav"><i class="visually-hidden">Déplier/replier le menu</i></button>');
+					t = document.getElementById('toggle-nav');
+					t.onclick=function(){ n.classList.toggle('is-closed');}
+				} 
+				if (window.innerWidth>=1000 && document.getElementById("toggle-nav")) {
+					document.getElementById("toggle-nav").outerHTML="";
+				}
+			}
+			navi();
+			window.addEventListener('resize', navi);
+		</script>
 	</div>

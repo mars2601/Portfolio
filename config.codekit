@@ -71,35 +71,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/dark_geometric.png": {
+	"\/img\/menu.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 817,
-		"inputAbbreviatedPath": "\/img\/dark_geometric.png",
-		"outputAbbreviatedPath": "\/img\/dark_geometric.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/dark_geometric_@2X.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4770,
-		"inputAbbreviatedPath": "\/img\/dark_geometric_@2X.png",
-		"outputAbbreviatedPath": "\/img\/dark_geometric_@2X.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/icon-sprite.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 34003,
-		"inputAbbreviatedPath": "\/img\/icon-sprite.png",
-		"outputAbbreviatedPath": "\/img\/icon-sprite.png",
+		"initialSize": 6911,
+		"inputAbbreviatedPath": "\/img\/menu.png",
+		"outputAbbreviatedPath": "\/img\/menu.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -283,17 +261,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/screenshot.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/screenshot.png",
-		"outputAbbreviatedPath": "\/screenshot.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/scss\/_color_var.scss": {
 		"createSourceMap": 0,

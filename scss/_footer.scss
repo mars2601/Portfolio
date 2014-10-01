@@ -14,7 +14,7 @@
 .footer{
 	position:relative;
 	min-height: 100px;
-	padding: 40px 0 20px 0;
+	padding: 40px 40px 20px 40px;
 	background-color: darken($c2, 15%);
 	.boxes{
 		margin-bottom: 0;
@@ -65,17 +65,17 @@
 			}
 	}
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
 .footer{
 	min-height: 80px;
+	padding: 20px 20px 40px 20px;
+	font-size: 1.5em;
 	.footer_infos.boxes{
 		h4{
 			color: $c0;
-			font-size: 1.3em;
 		}
 		p{
 			color: $c1;
-			line-height: 1.1em;
 			span{
 				@include font($header_font);
 				text-transform: uppercase;
