@@ -88,12 +88,24 @@ $susy: (
     clear: both; }
   .skills .boxes {
     width: 23.75691%;
-    float: left;
+    float: right;
     margin-left: 1.65746%; }
   .skills h2 + div.boxes {
     width: 23.75691%;
     float: left;
     margin-left: 0; }
+  .skills .link_skills {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .skills .link_skills:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .skills .link_skills .link {
+      width: 49.17127%;
+      float: left;
+      margin-left: 0; }
 
 .works {
   max-width: 100%;
@@ -274,11 +286,10 @@ form {
     width: 36.46409%;
     float: left;
     margin-left: 0; }
-  form fieldset:last-child {
-    width: 87.29282%;
-    float: left;
-    margin-left: 0;
-    color: red; }
+  form fieldset + fieldset {
+    width: 61.87845%;
+    float: right;
+    margin-left: 1.65746%; }
 
 div.project {
   max-width: 100%;
@@ -343,7 +354,24 @@ div.project {
   margin-left: 1.65746%;
   float: left; }
 
-@media screen and (min-width: 650px) and (max-width: 1000px) {
+.contact .moi {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .contact .moi:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .contact .moi .id {
+    width: 23.75691%;
+    float: left;
+    margin-left: 0; }
+  .contact .moi .infos_about {
+    width: 74.58564%;
+    float: right;
+    margin-left: 1.65746%; }
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
   h2 span.line {
     width: 5%; }
 
@@ -368,6 +396,59 @@ div.project {
       width: 49.17127%;
       float: left;
       margin-left: 0; }
+
+  div.project {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    div.project:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    div.project .left {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .left + .right + .left {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      float: left; }
+    div.project .right + .left + .right {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .right {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      div.project .right:after {
+        content: " ";
+        display: block;
+        clear: both; }
+    div.project .desc {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 1.65746%; }
+    div.project .tag_work_list {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .desc_add {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
 
   .content_link {
     width: 49.17127%;
@@ -397,17 +478,47 @@ div.project {
     margin-left: 1.65746%;
     float: left; }
 
-  /*form{
-    @include container;
-    fieldset:first-child{
-      @include span( 8);
-    }
-    fieldset+fieldset{
-      @include span(8);
-    }
-   }
-  */ }
-@media screen and (min-width: 200px) and (max-width: 650px) {
+  form {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    form:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    form fieldset:first-child {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    form fieldset + fieldset {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+
+  .contact .moi {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .contact .moi:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .contact .moi .id {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center; }
+      .contact .moi .id img {
+        margin-top: 0; }
+    .contact .moi .infos_about {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
+@media screen and (min-width: 200px) and (max-width: 700px) {
   .skills .boxes {
     width: 100%;
     float: left;
@@ -431,6 +542,59 @@ div.project {
     float: left;
     margin-left: 0; }
 
+  div.project {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    div.project:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    div.project .left {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .left + .right + .left {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      float: left; }
+    div.project .right + .left + .right {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .right {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      div.project .right:after {
+        content: " ";
+        display: block;
+        clear: both; }
+    div.project .desc {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 1.65746%; }
+    div.project .tag_work_list {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    div.project .desc_add {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+
   .content_link {
     width: 100%;
     float: left;
@@ -450,7 +614,48 @@ div.project {
     width: 49.17127%;
     float: right;
     margin-left: 1.65746%;
-    float: left; } }
+    float: left; }
+
+  form {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    form:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    form fieldset:first-child {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+    form fieldset + fieldset {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+
+  .contact .moi {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .contact .moi:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .contact .moi .id {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center; }
+      .contact .moi .id img {
+        margin-top: 0; }
+    .contact .moi .infos_about {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 html {
   font-size: 16px; }
 
@@ -1051,7 +1256,7 @@ th {
     display: block;
     padding: 15px 15px;
     font-size: 1.1em; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .header .navbar .nav li {
     display: block; }
     .header .navbar .nav li > a {
@@ -1132,12 +1337,11 @@ h2 {
   .content_box {
     padding: 0 20px;
     position: relative; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .content_box {
     padding: 0 10px;
     position: relative; } }
 .boxes {
-  min-height: 200px;
   position: relative;
   z-index: 1;
   border-radius: 4px 4px 4px 4px;
@@ -1168,9 +1372,10 @@ h2 {
   /* IE6-9 */
   border-bottom: 30px solid black;
   margin-top: 30px; }
+  .skills .boxes {
+    min-height: 500px; }
   .skills .boxes > .icon {
     background-color: #e5e5e4;
-    color: #690b1a;
     padding: 0;
     border-radius: 200px;
     text-align: center;
@@ -1179,27 +1384,62 @@ h2 {
     height: 170px;
     margin: 10px auto 10px auto;
     font-size: 2.1em;
-    border: 3px solid #690b1a; }
+    color: #d13d58;
+    border: 4px solid #d13d58; }
   .skills .boxes:hover .icon {
-    border: 3px solid #d13d58;
+    border: 4px solid #690b1a;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    color: #d13d58;
+    color: #690b1a;
     font-size: 2.5em; }
-  .skills .boxes + .boxes > .icon {
+  .skills .boxes + .boxes .link_skills .link {
+    color: #e07b8d;
+    -webkit-box-shadow: inset 0 0 0 4px #e07b8d;
+    -moz-box-shadow: inset 0 0 0 4px #e07b8d;
+    box-shadow: inset 0 0 0 4px #e07b8d; }
+    .skills .boxes + .boxes .link_skills .link:hover {
+      color: white;
+      -webkit-box-shadow: inset 0 0 0 4px #690b1a;
+      -moz-box-shadow: inset 0 0 0 4px #690b1a;
+      box-shadow: inset 0 0 0 4px #690b1a;
+      background-color: #690b1a; }
+  .skills .boxes + .boxes .icon {
     background-position: 0 -340px; }
-  .skills .boxes + .boxes + .boxes > .icon {
+  .skills .boxes + .boxes + .boxes .link_skills .link {
+    color: #db667b;
+    -webkit-box-shadow: inset 0 0 0 4px #db667b;
+    -moz-box-shadow: inset 0 0 0 4px #db667b;
+    box-shadow: inset 0 0 0 4px #db667b; }
+    .skills .boxes + .boxes + .boxes .link_skills .link:hover {
+      color: white;
+      -webkit-box-shadow: inset 0 0 0 4px #690b1a;
+      -moz-box-shadow: inset 0 0 0 4px #690b1a;
+      box-shadow: inset 0 0 0 4px #690b1a;
+      background-color: #690b1a; }
+  .skills .boxes + .boxes + .boxes .icon {
     background-position: 0 -510px; }
-  .skills .boxes + .boxes + .boxes + .boxes > .icon {
+  .skills .boxes + .boxes + .boxes + .boxes .link_skills .link {
+    color: #d6526a;
+    -webkit-box-shadow: inset 0 0 0 4px #d6526a;
+    -moz-box-shadow: inset 0 0 0 4px #d6526a;
+    box-shadow: inset 0 0 0 4px #d6526a; }
+    .skills .boxes + .boxes + .boxes + .boxes .link_skills .link:hover {
+      color: white;
+      -webkit-box-shadow: inset 0 0 0 4px #690b1a;
+      -moz-box-shadow: inset 0 0 0 4px #690b1a;
+      box-shadow: inset 0 0 0 4px #690b1a;
+      background-color: #690b1a; }
+  .skills .boxes + .boxes + .boxes + .boxes .icon {
     background-position: 0 -170px; }
   .skills p {
     margin: 0 auto;
     text-align: left;
     color: white;
-    font-weight: 200; }
+    font-weight: 200;
+    min-height: 150px; }
     .skills p span {
       display: block;
       color: #690b1a;
@@ -1210,6 +1450,26 @@ h2 {
     color: white;
     text-align: center;
     font-size: 1.5em; }
+  .skills .link_skills {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .skills .link_skills .link {
+      float: right;
+      margin-right: 20px;
+      font-size: 1em;
+      height: 40px;
+      line-height: 40px;
+      color: #d13d58;
+      -webkit-box-shadow: inset 0 0 0 4px #d13d58;
+      -moz-box-shadow: inset 0 0 0 4px #d13d58;
+      box-shadow: inset 0 0 0 4px #d13d58; }
+      .skills .link_skills .link:hover {
+        color: white;
+        -webkit-box-shadow: inset 0 0 0 4px #690b1a;
+        -moz-box-shadow: inset 0 0 0 4px #690b1a;
+        box-shadow: inset 0 0 0 4px #690b1a;
+        background-color: #690b1a; }
 
 .works {
   background-color: white;
@@ -1358,8 +1618,11 @@ h3, h4 {
     font-family: "proxima-nova-soft";
     font-size: 2.5em; }
     .name_desc .domain span {
-      font-size: 1em; } }
-@media screen and (max-width: 650px) {
+      font-size: 1em; }
+
+  .skills .boxes {
+    min-height: 400px; } }
+@media screen and (max-width: 700px) {
   h2 {
     font-size: 1.2em; }
     h2 span {
@@ -1372,84 +1635,34 @@ h3, h4 {
     font-family: "proxima-nova-soft";
     font-size: 1.2em; }
     .name_desc .domain span {
-      font-size: 1em; } }
-/*.present_stripes{
-	@include skew(20deg);
-	margin-top: 400px;
-	top:0;
-	position: absolute;
-	z-index: 0;
-}
-.present{
-	.main_infos{
-	}
-	.profil_text_infos{
-		height: 600px;
-	}
-	.profil{
-		height: 300px;
-		background-color: red;
-		position:relative;
-		z-index: 1;
-	}
-	.profil_main_infos{
-		position:relative;
-		z-index: 0;
-	}
-	.boxes.profil_add_infos{
-		height: 700px;
-	}
-	.link_add_infos{
-		position:absolute;
-		z-index:2;
-	}
-	.link{
-	display: block;
-	height:50px;
-	line-height: 50px;
-	width: 100%;
-	color: white;
-    @include font($header_font);
-    font-size: 1.2em;
-	text-align: center;
-	text-decoration: none;
-	border-radius: $border-radius;
-	background-color: white;
-	@include border-shadow(inset, 0, 0, 0, 4px, $col5);
-	@include transition(all, 0.2s, ease-in-out);
-	color: $col5;
-	&:hover{
-		background-color: $col6;
-		color:white;
-		@include border-shadow(inset, 0, 0, 0, 4px, $col6);
+      font-size: 1em; }
 
+  .skills .boxes {
+    min-height: 300px; } }
+.id {
+  margin-top: -20px; }
+  .id p {
+    width: 100%; }
+  .id img {
+    width: 100%;
+    max-width: 250px; }
 
-	}
-}
-}*/
+@media screen and (max-width: 700px) {
+  .id {
+    margin-top: 10px; } }
+div.moi {
+  min-height: 350px; }
+
 .contact {
-  background: -moz-linear-gradient(top, rgba(69, 72, 77, 0) 0%, black 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(69, 72, 77, 0)), color-stop(100%, black));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(69, 72, 77, 0) 0%, black 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(69, 72, 77, 0) 0%, black 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(69, 72, 77, 0) 0%, black 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(69, 72, 77, 0) 0%, black 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0045484d', endColorstr='#000000',GradientType=0 );
-  /* IE6-9 */
-  border-bottom: 30px solid black; }
+  border-bottom: 30px solid black;
+  min-height: 450px; }
   .contact img {
     border-radius: 100%;
-    border: 2px solid #d13d58; }
+    border: 2px solid #690b1a; }
   .contact h3 {
-    color: white; }
+    color: black; }
   .contact p {
-    color: white; }
+    color: black; }
 
 .add_contact {
   background-color: white; }
@@ -1470,7 +1683,8 @@ form {
     font-family: jubilat;
     font-style: normal;
     font-weight: 200;
-    padding: 0; }
+    padding: 0;
+    margin-right: 0; }
     form fieldset br + label {
       margin-top: 10px; }
     form fieldset label {
@@ -1575,6 +1789,9 @@ form {
   color: black;
   text-transform: uppercase; }
 
+.works .tag_work_list .tag_work ul li .the-icons {
+  background-color: #d13d58; }
+
 @media screen and (max-width: 1000px) {
   .works .tag_work_list {
     width: 100%;
@@ -1592,14 +1809,19 @@ form {
         width: 23.75691%;
         float: right;
         margin-left: 1.65746%; }
+        .works .tag_work_list .tag_work ul li:hover a {
+          margin-left: 0px; }
         .works .tag_work_list .tag_work ul li:first-child {
           width: 23.75691%;
           float: left;
           margin-left: 0; }
+          .works .tag_work_list .tag_work ul li:first-child .the-icons {
+            font-size: 0.9em; }
         .works .tag_work_list .tag_work ul li .the-icons {
           padding: 4px;
-          font-size: 1em; } }
-@media screen and (max-width: 650px) {
+          font-size: 1em;
+          margin-right: 4px; } }
+@media screen and (max-width: 700px) {
   .works .boxes {
     min-height: auto; }
   .works .tag_work_list {
@@ -1642,8 +1864,8 @@ form {
 .footer {
   position: relative;
   min-height: 100px;
-  padding-top: 40px;
-  background-color: black; }
+  padding: 40px 0 20px 0;
+  background-color: #240409; }
   .footer .boxes {
     margin-bottom: 0; }
   .footer .footer_infos.boxes [class^="icon-"]:before, .footer .footer_infos.boxes [class*=" icon-"]:before {
@@ -1684,7 +1906,7 @@ form {
           background-color: red;
           border-bottom: 2px solid red; }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .footer {
     min-height: 80px; }
     .footer .footer_infos.boxes h4 {

@@ -4,13 +4,6 @@
 $canvas-border : 40px;
 
 
-@mixin skew($deg){
-	-ms-transform: skew(0deg, $deg ); /* IE 9 */
-    -webkit-transform: skew(0deg, $deg ); /* Chrome, Safari, Opera */
-    transform: skew(0deg, $deg );
-}
-// $deg est a définir en degré
-
 @mixin gradient($col1, $col2){
 	background: $col1; /* Old browsers */
 	background: -moz-linear-gradient(left,  $col1 0%, $col2 100%); /* FF3.6+ */
@@ -21,17 +14,6 @@ $canvas-border : 40px;
 	background: linear-gradient(to right,  $col1 0%,$col2 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$col1', endColorstr='$col2',GradientType=1 ); /* IE6-9 */
 }
-$col1 : black;
-$col2 : white;
-//pink
-$col3 : #FBE380;
-$col4 : #F9B24B;
-//yellow
-$col5 : #73C9C6;
-$col6 : #73CDEA;
-//blue
-
-
 
 @mixin border-shadow($dir, $x, $y, $f, $width, $color){
 	-webkit-box-shadow:$dir $x $x $f $width $color;

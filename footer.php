@@ -10,7 +10,7 @@
 			</div>
 			<div class="footer_infos boxes">
 					<h4>Adresse</h4>
-					<p>Rue Ten-Eycken< 74</br>4850 Plombières</br>BELGIUM</p>
+					<p>Rue Ten-Eycken 74</br>4850 Plombières</br>BELGIUM</p>
 			</div>
 			<div class="footer_infos boxes">
 					<h4>Me suivre</h4>

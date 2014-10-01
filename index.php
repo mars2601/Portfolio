@@ -13,6 +13,7 @@
 						</div>
 							<h3>Web design</h3>
 							<p><span>___</span></br>Des designs unique selon vos besoins et vos attentes. Construisons ensembles votre site internet, et offrez vous une place de choix sur la toile.</p>
+							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=3'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
 						<div class="icon">
@@ -20,6 +21,7 @@
 						</div>
 							<h3>Intégration</h3>
 							<p><span>___</span></br>Des sites web ergonomiques, accessibles et efficaces pour assurer une performance. Tout cela avec les outils appropriés : (X)HTML, HTML5, SASS/LESS, CSS, JavaScript, Jquery, Wordpress,...</p>
+							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=6'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
 						<div class="icon">
@@ -27,6 +29,7 @@
 						</div>
 							<h3>Developpement</h3>
 							<p><span>___</span></br>Une Applications, un jeux ou un site spécifique pour mettre en oeuvre un nouveau concept. Désormais tout est possible sur internet et les outils PHP, Laravel, GuntJS, NodeJS, Javascript, SVG, ...</p>
+							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=8'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
 						<div class="icon">
@@ -34,6 +37,7 @@
 						</div>
 							<h3>Graphisme</h3>
 							<p><span>___</span></br>N'hésitez pas a me confier votre identité visuelle et vos supports grahique. La première impression que vous donnerez au grand public est imporantante.</p>
+							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=5'); ?>" class="link">En voir plus</a></div>
 					</div>
 			</div>
 		</div>
@@ -58,10 +62,11 @@
 								$image1_array = wp_get_attachment_image_src($image1_id, $image1_size);
 								$image1_url = $image1_array[0];
 
-								$page = get_page_by_title( 'voir-realisation-2' );
+								$page = get_page_by_title( 'voir-realisation' );
 								$page_voir_realisation_id = $page->ID;
 								$page1 = get_page_by_title( 'realisations' );
 								$page_realisation_id = $page1->ID;
+								
 					?>
 					<div class="boxes">
 						<section class="works_infos">
@@ -76,12 +81,11 @@
 							}
 						}
 				wp_reset_postdata();
-						
-					?>
+				?>
 			</div>
 				<div class="content_link">
 						<div class="border_link">
-							<a href="<?php echo get_page_uri( $page_realisation_id ) ?>" class="link works_links">Tous les travaux</a>
+							<a href="<?php echo get_page_uri( $page_realisation_id ); ?>" class="link works_links">Tous les travaux</a>
 						</div>
 					</div>
 			</div>

@@ -170,6 +170,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/projects\/nope1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 763056,
+		"inputAbbreviatedPath": "\/img\/projects\/nope1.png",
+		"outputAbbreviatedPath": "\/img\/projects\/nope1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/projects\/nope2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 588738,
+		"inputAbbreviatedPath": "\/img\/projects\/nope2.png",
+		"outputAbbreviatedPath": "\/img\/projects\/nope2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/projects\/OursonPendu.png": {
 		"fileType": 32768,
 		"ignore": 0,

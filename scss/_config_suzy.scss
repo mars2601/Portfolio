@@ -64,10 +64,16 @@ $susy: (
 .skills{
   @include container;
   .boxes{
-    @include span(2);
+    @include span(last 2);
   }
   h2+div.boxes{
     @include span(first 2);
+  }
+  .link_skills{
+    @include container;
+      .link{
+        @include span(first 4);
+      }
   }/*
   .boxes:nth-child(2n){
     @include span(last 4);
@@ -179,8 +185,7 @@ form{
     @include span(first 3);
   }
   fieldset+fieldset{
-    @include span(first 5);
-    color: red;  
+    @include span(last 5);
   }
  }
 
@@ -239,7 +244,7 @@ div.project{
 }
 
 
-@media screen and (min-width: 650px) and (max-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1000px) {
 
   h2{
     span.line{
@@ -300,15 +305,15 @@ div.project{
     @include span(first 4);
   }
   .works{
- .content_link{
-    position: relative;
-    right: auto;
-    .link{
-      position:relative;
-      bottom: 0px;
+   .content_link{
+      position: relative;
+      right: auto;
+      .link{
+        position:relative;
+        bottom: 0px;
+      }
     }
   }
- }
   .footer_infos{
     @include span(4);
   }
@@ -347,7 +352,7 @@ form{
 
 }
 
-@media screen and (min-width: 200px) and (max-width: 650px) {
+@media screen and (min-width: 200px) and (max-width: 700px) {
   .skills{
       .boxes{
         @include span(first 8);

@@ -96,14 +96,13 @@ h2{
 	position:relative;
 	}
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 .content_box{
 	@include padding-canvas(10px);
 	position:relative;
 	}
 }
 .boxes{
-	//background-color: rgba(255, 255, 255, 0.1);
 	position:relative;
 	z-index: 1;
 	border-radius: $border-radius $border-radius $border-radius $border-radius;
@@ -130,9 +129,11 @@ h2{
 	border-bottom: 30px solid black;
 //	background-color:rgba(0, 0, 0, 0.5);
 	margin-top: 30px;
+	.boxes{
+		min-height: 500px;
+	}
 	.boxes>.icon{
 		background-color:$c4;
-		color:$c2;
 		padding:0;
 		border-radius:200px;
 		text-align: center;
@@ -141,23 +142,63 @@ h2{
 		height:170px;
 		margin: 10px auto 10px auto;
 		font-size: 2.1em;
-		border:3px solid $c2;
+		color:$c1;
+		border:4px solid $c1;
 		
     }
     .boxes:hover .icon{
-		border:3px solid $c1;
+		border:4px solid $c2;
 		@include transition(all, 0.2s, ease-in-out);
-		color:$c1;
+		color:$c2;
 		font-size:2.5em;
 	}
-    .boxes+.boxes>.icon{
+    .boxes+.boxes{
+    	.link_skills{
+    		.link{
+    			color: lighten($c1, 15%);
+				@include border-shadow(inset, 0, 0, 0, 4px, lighten($c1, 15%));
+				&:hover{
+					color: $c0;
+					@include border-shadow(inset, 0, 0, 0, 4px, $c2);
+					background-color: $c2;
+				}
+    		}
+    	}
+    	.icon{
 		background-position: 0 -340px;
+    	}
     }
-    .boxes+.boxes+.boxes>.icon{
+    .boxes+.boxes+.boxes{
+    	.link_skills{
+    		.link{
+    			color: lighten($c1, 10%);
+				@include border-shadow(inset, 0, 0, 0, 4px, lighten($c1, 10%));
+				&:hover{
+					color: $c0;
+					@include border-shadow(inset, 0, 0, 0, 4px, $c2);
+					background-color: $c2;
+				}
+    		}
+    	}
+    	.icon{
 		background-position: 0 -510px;
+    	}
     }
-    .boxes+.boxes+.boxes+.boxes>.icon{
+    .boxes+.boxes+.boxes+.boxes{
+    	.link_skills{
+    		.link{
+    			color: lighten($c1, 5%);
+				@include border-shadow(inset, 0, 0, 0, 4px, lighten($c1, 5%));
+				&:hover{
+					color: $c0;
+					@include border-shadow(inset, 0, 0, 0, 4px, $c2);
+					background-color: $c2;
+				}
+    		}
+    	}
+    	.icon{
 		background-position: 0 -170px;
+    	}
     }
     p{
     	margin:0 auto;
@@ -178,6 +219,25 @@ h2{
     	text-align: center;
     	font-size:1.5em;
     }
+    .link_skills{
+    	position: absolute;
+    	bottom: 0;
+    	width: 100%;
+    	.link{
+    		float: right;
+    		margin-right: 20px;
+			font-size:1em;
+	    	height: 40px;
+	    	line-height: 40px;
+	    	color: $c1;
+			@include border-shadow(inset, 0, 0, 0, 4px, $c1);
+			&:hover{
+				color: $c0;
+				@include border-shadow(inset, 0, 0, 0, 4px, $c2);
+				background-color: $c2;
+			}
+    	}
+  	}
 }
 .works{
 	background-color: $c0;
@@ -328,9 +388,15 @@ h2{
 		}
 	}
 }
+.skills{
+	.boxes{
+		min-height: 400px;
+	}	
 }
 
-@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 700px) {
 	h2{
 		font-size: 1.2em;
 		span{
@@ -350,5 +416,10 @@ h2{
 			font-size: 1em;
 		}
 	}
+}
+.skills{
+	.boxes{
+		min-height: 300px;
+	}	
 }
 }

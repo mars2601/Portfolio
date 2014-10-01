@@ -14,8 +14,8 @@
 .footer{
 	position:relative;
 	min-height: 100px;
-	padding-top: 40px;
-	background-color: $c6;
+	padding: 40px 0 20px 0;
+	background-color: darken($c2, 15%);
 	.boxes{
 		margin-bottom: 0;
 	}
@@ -65,7 +65,7 @@
 			}
 	}
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 .footer{
 	min-height: 80px;
 	.footer_infos.boxes{

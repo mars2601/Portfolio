@@ -110,6 +110,21 @@
 		text-transform: uppercase;
 	}
 }
+.works{
+	.tag_work_list{
+		.tag_work{
+			ul{
+				li{
+	   				&:first-child{
+	   				}
+	   				.the-icons{
+	   					background-color: $c1;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 @media screen and (max-width: 1000px) {
@@ -120,13 +135,24 @@
 			ul{
 	    	@include container;
 				li{
+					&:hover a{
+						margin-left:0px;
+					}
 	   				@include span(last 2);
 	   				&:first-child{
 	   					@include span(first 2);
+	   					.the-icons{
+	   						font-size: 0.9em;
+	   					}
+
 	   				}
 	   				.the-icons{
 	   					padding: 4px;
 	   					font-size: 1em;
+	   					margin-right: 4px;
+	   					&:hover{
+
+	   					}
 					}
 				}
 			}
@@ -135,7 +161,7 @@
 }
 
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
 	.works{
 		.boxes{
 			min-height: auto;
