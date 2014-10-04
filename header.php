@@ -11,11 +11,10 @@
 	        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-
-	<script src="//use.typekit.net/byh7ayf.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
+<script src="//use.typekit.net/byh7ayf.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 	<!--<script type="text/javascript" src="./js/canvas.js"></script>-->
-	<script type="text/javascript" src="./js/modernizr.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
 
 </head>
 <body>
@@ -23,6 +22,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 	<div class="header">
+		<div class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></div>
 		<?php
 			$defaults = array(
 				'theme_location'  => 'top',

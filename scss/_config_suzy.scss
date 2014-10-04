@@ -72,7 +72,7 @@ $susy: (
   .link_skills{
     @include container;
       .link{
-        @include span(first 4);
+        @include span(first 3);
       }
   }/*
   .boxes:nth-child(2n){
@@ -243,114 +243,39 @@ div.project{
   }
 }
 
+//BLOG
 
-/*@media screen and (min-width: 700px) and (max-width: 1000px) {
-
-  h2{
-    span.line{
-      width: 5%;
+.blog_list{
+  .boxes{
+    @include container;
+    img{
+       @include span(first 2);
+    }
+    section{
+       @include span(last 6);
     }
   }
-  .skills{
-      .boxes:nth-child(2n){
-        @include span(last 4);
-      }
-      .boxes:nth-child(2n+1){
-        @include span(first 4);
-      }
+}
+.blog{
+  @include container;
+  
+  .image{
+    @include span(first 3);
+    margin-right: gutter();
   }
-.works{
-    .works_list{
-    @include span(first 8);
-    .boxes{
-      @include span(4);
+}
+@media screen and (min-width:1000px) and (max-width: 1400px) {
+  .skills{
+    @include container;
+    .boxes:nth-child(2n){
+      @include span(last 4);
     }
     .boxes:nth-child(2n+1){
       @include span(first 4);
     }
-  }  
-}
-
-//project
-div.project{
-  @include container;
-  .left{
-    @include span(8);
-  }
-  .left+.right+.left{
-    @include span(8);
-    float: left;
-  }
-  .right+.left+.right{
-    @include span(8);
-
-  }
-  .right{
-    @include span(8);
-    @include container;
-  }
-  .desc{
-    @include span(8);
-    padding-right: gutter();
-  }
-  .tag_work_list{
-    @include span(8);
-  }
-  .desc_add{
-    @include span(8);
+    //alignement 2*2
   }
 }
-
-  .content_link{
-    @include span(first 4);
-  }
-  .works{
-   .content_link{
-      position: relative;
-      right: auto;
-      .link{
-        position:relative;
-        bottom: 0px;
-      }
-    }
-  }
-  .footer_infos{
-    @include span(4);
-  }
-  .footer_infos:nth-child(2n+1){
-    @include span(first 4);
-  }
-  .footer_infos:last-child{
-    @include span(last 4);
-    float: left;
-  }
-form{
-  @include container;
-  fieldset:first-child{
-    @include span( 8);
-  }
-  fieldset+fieldset{
-    @include span(8);
-  }
- }
-.contact{
-  .moi{
-    @include container;
-    .id{
-       @include span(8);
-       text-align: center;
-       img{
-        margin-top: 0;
-       }
-    }
-    .infos_about{
-       @include span(8);
-    }
-  }
- }
- 
-
-}*/
 
 @media screen and (max-width: 1000px) {
   .skills{

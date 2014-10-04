@@ -5,7 +5,7 @@
 				<?php 
 					$post_id = $_GET['post_id'];
 					$args = array(
-							'post_type' => 'realisations',
+							'post_type' => 'realisations',	
 							'p' => $post_id
 						);
 					$the_query = new WP_Query( $args );

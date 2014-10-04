@@ -32,6 +32,7 @@
 
  form{
  	width:100%;
+ 	padding-bottom: 40px;
  	fieldset{
  		border:none;
  		font-size:1.1em;
@@ -57,11 +58,16 @@
 			border-radius: $border-radius $border-radius $border-radius $border-radius;
 			border: 1px solid rgba(0, 0, 0, 0.4);
 			width: 100%;
+			padding: 20px;
 		}
 		.link{
 			border:none;
 			width: 50%;
-			font-size: 1.2em;
+			font-size: 1.1em;
+			line-height: 1.1em;
+		}
+		input[type="text"]{
+			width: 90%;
 		}
  	}
  }

@@ -12,7 +12,7 @@
 							<div title="Code: 0xe80f" class="the-icons span3"><i class="icon-desktop"></i></div>
 						</div>
 							<h3>Web design</h3>
-							<p><span>___</span></br>Des designs unique selon vos besoins et vos attentes. Construisons ensembles votre site internet, et offrez vous une place de choix sur la toile.</p>
+							<p><span>___</span></br>Des designs unique selon vos besoins et vos attentes. Construisons ensembles votre site internet, et offrez vous une place de choix sur la toile. et offrez vous une place de choix sur la toile.</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=3'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
@@ -71,7 +71,7 @@
 					<div class="boxes">
 						<section class="works_infos">
 							<a class="link" href="<?php echo get_page_uri( $page_voir_realisation_id ) ?>?post_id=<?php the_ID(); ?>">
-								<h3><span>_</span><?php the_title(); ?></h3> 
+								<h3><span>//&nbsp;&nbsp;</span><?php the_title(); ?></h3> 
 							</a>
 							<p><?php the_field('sous-titre'); ?></p>
 						</section>
