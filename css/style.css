@@ -917,10 +917,9 @@ div.project {
       .contact .moi .id img {
         margin-top: 0; }
     .contact .moi .infos_about {
-      width: 100%;
+      width: 87.29282%;
       float: left;
-      margin-left: 0;
-      margin-right: 0; } }
+      margin-left: 1.65746%; } }
 html {
   font-size: 16px; }
 
@@ -2618,7 +2617,8 @@ html {
   }
 }*/
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 1000;
   width: 100%;
   background-color: white;
@@ -2771,10 +2771,11 @@ html {
 	}	
 }*/
 .content {
-  min-height: 400px; }
+  min-height: 400px;
+  margin-top: 50px; }
   .content .presentation {
     min-height: 270px;
-    padding: 40px 0 0 0;
+    padding: 0 0 0 0;
     background: url("./img/background2.jpg"); }
     .content .presentation .title {
       margin-top: -50px;
@@ -2798,7 +2799,7 @@ html {
   display: block;
   width: 100%;
   line-height: 0.9em;
-  margin-top: 30px; }
+  padding-top: 65px; }
 .name_desc .domain {
   padding-bottom: 100px;
   font-family: "proxima-nova-soft";
@@ -2821,7 +2822,7 @@ h2 {
   display: inline-block;
   padding: 10px;
   font-size: 2em;
-  padding: 20px 0 45px 0;
+  padding: 20px 0 30px 0;
   margin: 20px 0 10px 0;
   color: black;
   font-style: normal;
@@ -2879,6 +2880,8 @@ h2 {
   /* IE6-9 */
   border-bottom: 30px solid black;
   margin-top: 30px; }
+  .skills .boxes {
+    margin-top: 40px; }
   .skills .boxes > .icon {
     background-color: #e5e5e4;
     padding: 0;
@@ -3111,16 +3114,18 @@ h3, h4 {
   .content_link .link {
     position: absolute;
     bottom: 30px;
-    margin-bottom: 3.31492%;
+    margin-bottom: 4.14365%;
     left: 0; }
 
 @media screen and (max-width: 1000px) {
-  h2 span {
-    width: 5%; }
-  h2 span.lt {
-    margin-right: 10px; }
-  h2 span.rt {
-    margin-left: 10px; }
+  h2 {
+    margin-top: 60px; }
+    h2 span {
+      width: 5%; }
+    h2 span.lt {
+      margin-right: 10px; }
+    h2 span.rt {
+      margin-left: 10px; }
 
   .works .content_link {
     position: relative;
@@ -3142,7 +3147,8 @@ h3, h4 {
     background: url("./img/background2.jpg"); }
 
   h2 {
-    font-size: 1.8em; }
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.8); }
     h2 span {
       width: 2%;
       font-size: 2em; }
@@ -3172,15 +3178,31 @@ h3, h4 {
       width: 240px;
       height: 240px; } }
 .id {
-  margin-top: -20px;
+  margin-top: 15px;
   color: white; }
   .id p {
     width: 100%;
     color: white;
-    font-weight: 200; }
+    font-weight: 200;
+    text-shadow: 1px 1px 2px white; }
   .id img {
     width: 100%;
-    max-width: 250px; }
+    max-width: 250px;
+    border-radius: 100%;
+    border: 10px solid white;
+    margin-top: -40px; }
+
+body .content .about-presentation {
+  background: url("./img/essential.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour Chrome et Safari */
+  -moz-background-size: cover;
+  /* pour Firefox */
+  -o-background-size: cover;
+  /* pour Opera */
+  background-size: cover;
+  /* version standardisée */
+  background-position-y: 53px; }
 
 @media screen and (max-width: 1000px) {
   .id {
@@ -3190,18 +3212,17 @@ h3, h4 {
 div.moi {
   min-height: 350px; }
 
+.infos_about {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 20px; }
+
 .contact {
   min-height: 450px; }
-  .contact img {
-    border-radius: 100%;
-    border: 2px solid #690b1a;
-    margin-top: -40px; }
   .contact h3 {
-    color: rgba(0, 0, 0, 0.8); }
+    color: black; }
   .contact p {
-    color: rgba(0, 0, 0, 0.8); }
+    color: black; }
   .contact .moi {
-    background-color: rgba(255, 255, 255, 0.6);
     padding-top: 40px;
     border-radius: 170px 0 0 0; }
 
@@ -3407,7 +3428,7 @@ form {
           margin-left: 0; }
 
   .project, .moi {
-    font-size: 1.3em; } }
+    font-size: 1em; } }
 .blog_list, .blog {
   padding-bottom: 60px; }
   .blog_list p, .blog p {
@@ -3525,11 +3546,18 @@ form {
     font-size: 1.3em; }
   .footer .footer_infos.boxes p {
     color: #d13d58;
-    line-height: 1.1em; }
+    line-height: 1.1em;
+    margin-top: 20px; }
     .footer .footer_infos.boxes p span {
       font-family: "proxima-nova-soft";
       text-transform: uppercase;
-      color: #d13d58; }
+      color: #d13d58;
+      display: inline-block; }
+  .footer .footer_infos.boxes p[itemprop] {
+    margin-bottom: 0; }
+  .footer .footer_infos.boxes p[itemprop] + p[itemprop] {
+    display: inline-block;
+    margin-top: 0; }
   .footer .footer_infos.boxes ul {
     margin: 20px 0 20px 0;
     padding: 0;

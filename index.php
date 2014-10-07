@@ -13,7 +13,7 @@
 							<div title="Code: 0xe80f" class="the-icons span3"><i class="icon-desktop"></i></div>
 						</div>
 							<h3 itemprop="makesOffer">Web design</h3>
-							<p><span>___</span></br>Des designs uniques selon vos besoins et vos attentes. Construisons ensembles votre site internet afin de répondre au besoins du marché et afin d'obtenir une présence considérable sur la toile</p>
+							<p><span>___</span></br>Des designs uniques selon vos besoins et vos attentes. Construisons ensemble votre site internet afin de répondre aux besoins du marché et de faire preuve d'une présence considérable sur la toile.</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=3'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes" itemscope itemtype="http://schema.org/Brand">
@@ -29,7 +29,7 @@
 							<div title="Code: 0xe80a" class="the-icons span3"><i class="icon-wrench"></i></div>
 						</div>
 							<h3 itemprop="makesOffer">Developpement</h3>
-							<p><span>___</span></br>Une Applications, un jeux ou un site spécifique pour mettre sur pied votre nouveau concept. Désormais tout est possible avec internet et les outils PHP, Laravel, GuntJS, NodeJS, Javascript, SVG, ...</p>
+							<p><span>___</span></br>Une Application, un jeux ou un site spécifique pour mettre sur pied votre nouveau concept. Désormais, tout est possible avec internet et les outils PHP, Laravel, GuntJS, NodeJS, Javascript, SVG,...</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=8'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
@@ -37,7 +37,7 @@
 							<div title="Code: 0xe800" class="the-icons span3"><i class="icon-flash"></i></div>
 						</div>
 							<h3 itemprop="makesOffer">Graphisme</h3>
-							<p><span>___</span></br>N'hésitez pas a me confier la création de votre identité visuelle et de vos supports grahique. La première impression que vous donnerez au grand public est imporantante, Ne la négligé pas!</p>
+							<p><span>___</span></br>N'hésitez pas à me confier la création de votre identité visuelle et de vos supports grahiques. La première impression que vous donnez au grand public est importante, ne la négligez pas!</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=5'); ?>" class="link">En voir plus</a></div>
 					</div>
 			</div>

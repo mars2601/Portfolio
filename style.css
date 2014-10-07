@@ -3088,7 +3088,8 @@ html {
   }
 }*/
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 1000;
   width: 100%;
   background-color: white;
@@ -3264,10 +3265,11 @@ html {
 }*/
 .content {
   min-height: 400px;
+  margin-top: 50px;
 }
 .content .presentation {
   min-height: 270px;
-  padding: 40px 0 0 0;
+  padding: 0 0 0 0;
   background: url("./img/background2.jpg");
 }
 .content .presentation .title {
@@ -3294,7 +3296,7 @@ html {
   display: block;
   width: 100%;
   line-height: 0.9em;
-  margin-top: 30px;
+  padding-top: 65px;
 }
 .name_desc .domain {
   padding-bottom: 100px;
@@ -3702,7 +3704,8 @@ h3, h4 {
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   h2 span {
     width: 2%;
@@ -3749,10 +3752,27 @@ h3, h4 {
   width: 100%;
   color: white;
   font-weight: 200;
+  text-shadow: 1px 1px 2px white;
 }
 .id img {
   width: 100%;
   max-width: 250px;
+  border-radius: 100%;
+  border: 10px solid white;
+  margin-top: -40px;
+}
+
+body .content .about-presentation {
+  background: url("./img/essential.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  /* pour Chrome et Safari */
+  -moz-background-size: cover;
+  /* pour Firefox */
+  -o-background-size: cover;
+  /* pour Opera */
+  background-size: cover;
+  /* version standardisée */
+  background-position-y: 53px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -3768,23 +3788,18 @@ div.moi {
 }
 
 .infos_about {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.75);
   padding: 20px;
 }
 
 .contact {
   min-height: 450px;
 }
-.contact img {
-  border-radius: 100%;
-  border: 2px solid #690b1a;
-  margin-top: -40px;
-}
 .contact h3 {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 .contact p {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 .contact .moi {
   padding-top: 40px;

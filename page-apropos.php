@@ -39,7 +39,7 @@
             }
         </script>
 	<div class="content">
-			<div class="presentation">
+			<div class="presentation about-presentation">
 				<div class="contact content_box">
 					<h2><span class="line lt"></span>Hello !<span class="line rt"></span></h2>
 					<?php 

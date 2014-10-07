@@ -15,7 +15,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	<!--<script type="text/javascript" src="./js/canvas.js"></script>-->
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/modernizr.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/fixedHeader.min.js"></script>
+	<!--<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/fixedHeader.min.js"></script>-->
 </head>
 <body <?php if(is_home()){echo ('onmouseover="positionSouris(event);" onmousemove="positionSouris(event);"');} ?> >
 	<!--[if lt IE 7]>
