@@ -8,21 +8,23 @@
 	<meta charset="UTF-8">
 	<title><?php bloginfo('name'); ?></title>
     <meta name="description" content="Portfolio de Marcel Pirnay contenant ses projets et réalisations dans le domaine du développement, du web design et">
-	        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
-<script src="//use.typekit.net/byh7ayf.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+	<script src="//use.typekit.net/byh7ayf.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 	<!--<script type="text/javascript" src="./js/canvas.js"></script>-->
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
-
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/modernizr.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/fixedHeader.min.js"></script>
 </head>
-<body>
+<body <?php if(is_home()){echo ('onmouseover="positionSouris(event);" onmousemove="positionSouris(event);"');} ?> >
 	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	<div class="header">
-		<div class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></div>
+	<div class="header" id="header">
+		<a href="<?php echo get_option('home'); ?>">
+			<div class="logo"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt=""></div>
+		</a>
 		<?php
 			$defaults = array(
 				'theme_location'  => 'top',

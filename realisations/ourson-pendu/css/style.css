@@ -1,0 +1,473 @@
+/*    GRID 10,300,10,10,10,300,10,10,10,300,10  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+@font-face{
+font-family: badaboom;
+src: url('../fonts/BADABB__.TTF');
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	width: 100%;
+	font-family: 'Averia Sans Libre', cursive;
+}
+
+html{
+	color: rgba(50, 50, 50, 1);
+	background: url(../img_pendu/grid_pattern/tiny_grid_@2X.png);
+}
+
+
+
+div#grid{
+	width: 70%;
+	position: relative;
+	min-height: 800px;
+	margin: 0 auto;
+}
+
+div#header{
+	margin:0 auto;
+	margin-top: 30px;
+	padding:0 0 20px 0;
+	width: 90%;
+	height: 110px;
+	width: 100%;
+	letter-spacing: 0.3em;
+	margin-bottom: 5px;
+	font-family: 'badaboom';
+	color:#F8A23B;
+	background-color: rgb(51, 51, 51);
+}
+
+h1{
+	font-size: 4em;
+	padding: 15px 20px 0 40px;
+}
+
+h2{
+	font-size: 2em;
+	padding: 5px 40px 15px 40px;
+
+	
+}
+
+h1+img{
+	position: relative;
+	float: right;
+	margin-top: -100px;
+	margin-right: 3%;
+
+}
+
+div#affichage{
+	width: 50%;
+	display: inline-block;
+	height: 550px;
+	background-color: rgb(51, 51, 51);
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+}
+
+div#grid div.success{
+	background-color: #F79837;	
+}
+
+div#affichage img{
+	width: 100%;
+	display: inline-block;
+	
+}
+
+div#content{
+	display: block;
+	float: right;
+	vertical-align: top;
+	margin-left: 2%;
+	width: 48%;
+	height: 550px;
+}
+
+div.chances-restantes{
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	padding: 20px 0;
+}
+div.chances-restantes p{
+	text-align: center;
+	font-size: 1.4em;
+}
+div.chances-restantes p span{
+	display: block;
+	font-size: 5em;
+	width: 100%;
+}
+
+div.mots{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	margin-top: 5px;
+
+}
+div.remplacement{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	padding: 0;
+	font-size: 2em;
+	letter-spacing: 0.5em;
+	text-align: center;
+
+}
+div.remplacement h3{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding: 20px 0;
+}
+div.essai{
+	font-size: 1.2em;
+	margin-top: 5px;
+
+}
+div.essai p{
+	padding: 20px;
+	letter-spacing: 0.1em;
+}
+div.essai p span{
+	display: inline-block;
+	letter-spacing: 0.2em;
+	color:#F8A23B;
+	text-shadow: 1px 1px 4px rgba(0,0,0,1);
+	font-size: 1.2em;
+
+
+}
+div.essai p span:before{
+	content:'-';
+}
+div.essai p span:first-child:before{
+	content:'';
+}
+
+fieldset.select{
+	width: 100%;
+	margin-top: 5px;
+	padding-bottom: 20px;
+}
+
+p.message-entree{
+	padding: 20px 0 5px 20px;
+	color: #F68A1E;
+	font-size: 1.6em;
+	text-shadow: 0 1px 1px rgba(50, 50, 50, 0.8);	
+}
+
+
+
+
+
+label[for='lettres']{
+	font-size: 1.2em;
+	margin-top: 10px;
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+select{
+	width: 30%;
+	height: 40px;
+	background-color: #FF9933;
+	border:none;
+	text-align: center;
+	padding: 1%;
+	font-size: 1.8em;
+	margin: 20px 5% 0 5%;
+
+}
+
+select option{
+	padding: 2%;
+	text-align: center;
+	font-size: 1.3em;
+	display: inline;
+
+}
+
+input[type='submit']{
+	width: 100%;
+	padding: 3%;
+	display: block;
+	float: right;
+	margin-top: 5px;
+	font-size: 2em;
+	letter-spacing: 0.2em;
+	color:white;
+	text-shadow: 0 1px 1px rgba(50, 50, 50, 0.8);
+	background-color: rgb(51, 51, 51);
+	border:none;
+	font-family: 'Averia Sans Libre', cursive;
+}
+
+input[type='submit']:hover{
+	background-color: #FF9933;
+	color: white;
+	cursor: pointer;
+}
+
+.case{
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+	background-color: rgba(150, 150, 150, 0.6);
+
+}
+
+
+
+div#content ul li{
+	width:48%;
+	height: 48%;
+	display: inline-block;
+	text-align: center;
+}
+div#content ul li a{
+	width: 100%;
+	display: block;
+	font-size: 2em;
+	text-decoration: none;
+	font-family: 'Averia Sans Libre', cursive;
+	color:#F8A23B;
+}
+div#content ul li a p{
+	background-color: rgb(51, 51, 51);
+	padding: 10px 0;
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+
+}
+div#content ul li a:hover p{
+	background-color: #25537C;
+}
+div#content ul li a:hover{
+	background-color: rgba(200, 200, 200, 0.2);
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.6);
+}
+
+
+
+
+div#content ul li a img{
+	width: 100%;
+
+}
+
+
+div#content ul li:first-child{
+	margin-right: 4%;
+}
+
+
+div#grid div.mode{
+	width: 100%;
+
+}
+
+/* multijoueur */
+/* multijoueur */
+/* multijoueur *//* multijoueur */
+
+
+h4{
+	font-size: 1.4em;
+	padding: 10px 10px 10px 40px;
+	background-color: rgb(51, 51, 51);
+	color:#F8A23B;
+	margin-bottom: 5px;
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+
+}
+
+h4 span{
+	color: white;
+	font-style: italic;
+}
+
+label[for='mot']{
+	padding: 0 10px 20px 40px;
+	font-size: 1.5em;
+}
+input[type='password']{
+	padding: 2px;
+	font-size: 1.3em;
+
+}
+
+
+.joueur1{
+	padding: 20px 0;
+}
+.joueur1 p.attention{
+	padding-left: 40px;
+	padding-top: 10px;
+}
+
+
+.joueur1+input[type='submit']{
+	margin-top: 5px;
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+	font-family: 'Averia Sans Libre', cursive;
+}
+div.retour{
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2%;
+
+}
+
+div.phrase, div.solus{
+	width: 100%;
+	background-color: #FF9933;
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+}
+div.solus{
+	margin-top: 5px;
+}
+div.solus p{
+	padding: 20px;
+	font-size: 1.4em;
+}
+div.solus p span{
+	color:#25537C;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+
+}
+
+h2.result{
+	padding: 20px;
+	font-size: 1.4em;
+}
+h2.result span{
+	color:#25537C;
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+h3.retour{
+	width: 100%;
+	background-color: rgba(150, 150, 150, 0.6);	
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+}
+h3.retour a{
+	margin-top: 5px;
+	display: block;
+	padding: 20px 20px 20px 45px;
+	text-decoration: none;
+	color:rgb(51, 51, 51);
+	background: url(../img_pendu/retour.png) 20px 20px no-repeat;
+	font-size: 1.2em;
+}
+h3.retour a:hover{
+	background-color: #FF9933;
+	color: white;
+}
+
+
+
+/*footer*/
+
+footer{
+	bottom: 0;
+	color: rgba(51, 51, 51, 0.5);
+	position: relative;
+	width: 70%;
+	margin-left: 15%;
+	padding-bottom: 10px;
+	box-shadow: 1px -1px 3px rgba(0,0,0,0.5);
+	background-color: rgba(150, 150, 150, 0.6);
+}
+
+footer p{
+	padding: 10px 20px;
+	display: block;
+	text-align: center;
+}
+footer p+p{
+	padding-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

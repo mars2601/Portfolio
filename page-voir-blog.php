@@ -1,6 +1,10 @@
 <?php get_header(); ?>
+	<!-- jQuery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<!-- Fresco -->
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fresco.js"></script>
 	<div class="content">
-		<div class="blog content_box">
+		<div class="blog content_box" itemscope itemtype="http://schema.org/Article">
 				<?php 
 					$blog_id = $_GET['blog_id'];
 					$args = array(
@@ -31,25 +35,28 @@
 
 												?>
 									<h2><span class="line lt"></span>Le Blog !<span class="line rt"></span></h2>
-									<div id="unique" class="image clearfix">
-										<a href="<?php echo $image2_url; ?>" class="thumbnail">
-					                        <img src="<?php echo $image2_url; ?>" alt="<?php the_title(); ?>" height="100" />
+									<div class="image demonstrations">
+										<a alt="<?php the_title(); ?>" title="agrandir l\'image" href='<?php echo $image2_url; ?>' 
+										     class='fresco' 
+										     data-fresco-group='example' 
+										     data-fresco-caption="<?php the_title(); ?>">
+					                        <img itemprop="image" src="<?php echo $image2_url; ?>" alt="<?php the_title(); ?>" height="100" />
 					                    </a>
 									</div>
 					                    
 									<section>
 										<div class="boxes desc">
-										<h3><?php the_title(); ?></h3>
+										<h3 itemprop="name"><?php the_title(); ?></h3>
 										<div title="Code: 0xe826" class="the-icons span3"><i class="icon-calendar"></i></div>
-										<time class="time">Publié le <?php the_date('l j F Y', '<span>', '</span>'); ?></time>
+										<time class="time" itemprop="dateCreated" datetime="<?php get_field('date') ?>">Publié le <?php the_date('l j F Y', '<span>', '</span>'); ?></time>
 									<span class="distand"></span>
 										<p class="choc"><?php the_field('phrasechoc') ?></p>
-										<p class="intro"><?php the_field('introduction') ?></p>
-										<p class="contenu"><?php the_content() ?></p>
+										<p class="intro" itemprop="articleSection"><?php the_field('introduction') ?></p>
+										<p class="contenu" itemprop="articleBody"><?php the_content() ?></p>
 										<p class="auteur"><?php the_field('auteur') ?></p>
 										<p class="editeur"><?php the_field('editeur') ?></p>
-										<p class="sources"><?php the_field('sources') ?></p>
-										<p class="lien">Lien officiel:&nbsp;&nbsp;<a href="<?php the_field('lien') ?>"><?php the_field('lien') ?></a></p>
+										<p class="sources" ><?php the_field('sources') ?></p>
+										<p class="lien">Lien officiel:&nbsp;&nbsp;<a itemprop="url" alt="lien officiel" "voir le lien officiel" href="<?php the_field('lien') ?>"><?php the_field('lien') ?></a></p>
 									</section>
 					<?php
 					}
@@ -58,14 +65,14 @@
 				?>
 		</div>
 	</div>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.heplbox.js"></script>
+	
+    <!--<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.heplbox.js"></script>
         <script>
             jQuery( function() {
                 jQuery( '#unique a.thumbnail' ).heplbox();
                 jQuery( '#many a.thumbnail' ).heplbox();
             } );
-        </script>
+        </script>-->
 	<script type="text/javascript">
 	window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
 	</script>

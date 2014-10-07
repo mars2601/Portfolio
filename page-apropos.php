@@ -56,17 +56,17 @@
 						if( $the_query->have_posts() ):
 							while( $the_query->have_posts() ):$the_query->the_post();
 					?>
-					<div class="moi">
+					<div class="moi" itemscope itemtype="http://schema.org/Person">
 						<div class="boxes id">
-							<img src="<?php echo $portrait_url; ?>" alt="portrait">
+							<img itemprop="image" src="<?php echo $portrait_url; ?>" alt="portrait">
 						</div>
 						<div class="boxes infos_about">
 							<h3><?php echo get_field('h3'); ?></h3>
-							<p><?php echo the_content(); ?></p>
+							<p itemprop="description"><?php echo the_content(); ?></p>
 							<!--<a data-pin-do="buttonFollow" href="http://fr.pinterest.com/marcelpirnay/">Marcel Pirnay</a>
 							<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
 							</br>-->
-							<a href="https://twitter.com/Marss2601" class="twitter-follow-button" data-show-count="false">Follow @Marss2601</a>
+							<a itemprop="follows" alt"twitter" title"voir le profil twitter" href="https://twitter.com/Marss2601" class="twitter-follow-button" data-show-count="false">Follow @Marss2601</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 						</div>
 					</div>

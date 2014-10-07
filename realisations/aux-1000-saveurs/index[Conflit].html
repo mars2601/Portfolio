@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC 	"-//W3C//DTD XHTML 1.0 Strict//EN"
+						"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-BE">
+	<head>
+	<style type="text/css">
+
+	</style>
+		<!-- pour protocole http -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta http-equiv="Content-Language" content="fr-BE" />
+
+		<!-- "notice Dublin Core" de la ressource (plus d'info : http://openweb.eu.org/articles/dublin_core/) -->
+		<meta name="DC.Language" content="fr" />
+		<meta name="DC.Creator" content="Marcel Pirnay" />
+		<meta name="DC.Format" content="text/html" />
+		
+		<!-- icone pour les favoris -->
+		<link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+
+		<!-- liens vers les feuilles de styles adéquates en fonction du media -->
+		<link rel="stylesheet" type="text/css" href="../css/screenpc.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="../css/print.css" media="print" />
+				
+		<!-- inclure le javascript -->
+		<script type="text/javascript" src="../js/script.js" ></script>
+		
+		
+		<title>Marcel Pirnay</title>
+	</head>
+
+	<body>
+		<!-- contenu -->
+		<div class="page">
+		
+			<div id="test">
+				<div id="bord">
+				</div>
+			</div>
+		
+			<h1 class="logo">
+				<a>
+					<img src="../img/logo.png"  alt=""/>
+				</a>
+			</h1>
+		
+			
+		
+			<div class="contenu">
+				<div class="bande">
+					<span class="nav"></span>
+					<div class="header">
+					
+					<ul  class="navbar">
+					
+				
+					<li [ (#ID_RUBRIQUE|=={[(#ENV{id_rubrique})]|?{class="selected",''}})]  title="Home"><a href="../html/index.html">Actu</a></li>
+					<li [ (#ID_RUBRIQUE|=={[(#ENV{id_rubrique})]|?{class="selected",''}})]  title="About" ><a href="../html/about.html">A propos</a></li>
+					<li [ (#ID_RUBRIQUE|=={[(#ENV{id_rubrique})]|?{class="selected",''}})]  title="Portfolio"><a href="../html/portfolio.html">Portfolio</a></li>
+					<li [ (#ID_RUBRIQUE|=={[(#ENV{id_rubrique})]|?{class="selected",''}})]  title="contact"><a href="../html/contact.html">Contact</a></li>
+					</ul>
+					</div>
+					
+
+						
+
+					<div class="droite">
+						
+						<div class="titre">
+							<span class="ga"></span> <!-- pliage -->
+							
+							<p>Bienvenue sur ma page.</p>
+							
+						</div>
+					</div>
+					
+					
+					
+					<?php
+ 
+					//on se connecte à notre base
+ 
+					$link = mysql_connect('localhost', 'root', 'root');  
+					mysql_select_db ('img', $link);  
+					?>
+				
+					<div class="articles">
+						<div class="photos">
+							<img src="../img/vitrine.jpg"  alt="vitrine"/>
+						</div>
+						<div class="paragraphe">
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 							veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 									deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</div>
+					
+					<div class="articles article2">
+						<div class="photos">
+							<img src="../img/renova.jpg" alt="renova"/>
+						</div>
+						<div class="paragraphe">
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 							veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 									voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>
+					</div>
+					
+						<div class="articles article2">
+						<div class="photos">
+							<?php
+
+							$req = mysql_query("select * img WHERE img_id = 'image1'") or die(mysql_error());
+
+							$data = mysql_fetch_array($req);
+
+							$user_image = $data['img_lien'];
+
+							$repertoire = "../img/site_mars_tab";
+
+							?>
+
+							<img src="<?php echo $repertoire/$user_image; ?>" alt="test" />
+							
+						</div>
+						<div class="paragraphe">
+							<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 							veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 									voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+							</p>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+
+					
+				</div>
+
+			</div>
+		</div>
+		
+		
+	<!--<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 							veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 						id est laborum.
+					</p>
+					<img src="../img/garden.jpg" width="400" height="267" alt=""/>
+					-->
+
+	       
+	       
+	       
+
+		
+			       
+	       
+		
+		
+
+			
+		
+		
+		

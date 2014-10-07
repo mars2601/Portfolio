@@ -1,0 +1,249 @@
+/* RESET MEYER --début--- 
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* RESET MEYER --fin--- 
+*/
+
+
+@font-face {
+    font-family: ClarendonTMed;
+    src: url('font/ClarendonTMed.ttf');
+    font-weight:400;
+}
+
+body{
+	background: url('css/worn_dots.png') repeat;
+}
+
+
+div.header{
+	height: 150px;
+	width:1000px;
+	margin: 0 auto;
+
+	padding-top:30px;
+}
+
+ul.navbar{
+
+
+	
+    font-family: ClarendonTMed, Helvetica, Arial, sans-serif;
+    font-size:25px;
+    letter-spacing:0.5px;
+    
+
+	height: 120px;
+	width:89%;
+	float:left;
+	margin: 0 auto;
+
+	background: url('css/fondul.png') 0 0 repeat-x ;
+
+	
+	}
+	
+ul.navbar li{
+
+
+	height:20px;
+	padding:45px 15px;
+	margin:0 25px;
+	
+
+
+	
+	}
+
+
+
+ul.navbar li.left{
+	float:left;
+}
+
+ul.navbar li.right{
+	float:right;
+}
+
+
+ul.navbar li a{
+
+
+	display:block;
+	text-decoration: none;
+	color:white;
+	text-shadow: inset #ccc -1px -1px 0;
+	
+		
+		-webkit-transition: all 0.3s ;
+		-moz-transition: all 0.3s ;
+        -ms-transition: all 0.3s ;
+        -o-transition: all 0.3s ;
+		transition: all 0.3s ;
+
+	}
+ul.navbar li a:hover{
+
+
+	color:rgb(50%,50%,50%);
+	
+	}
+
+span.ruban{
+	height:120px;
+	width:50px;
+	text-indent: 101%;
+	overflow:hidden;
+
+	
+}
+
+span.droit{
+	float:left;
+	background: url('css/sprite1.png')  -200px 0px  no-repeat;
+	
+}
+
+span.gauche{
+	float:left;
+	background: url('css/sprite1.png')  -250px 0px  no-repeat;
+	
+}
+	
+	
+div.page h1{
+
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	position: relative;
+	margin-bottom:-170px;
+	text-indent:-101%;
+	overflow:hidden;
+	background: url('css/sprite1.png') 0 0 no-repeat;
+}
+
+
+
+div.content{
+	width:900px;
+	padding-bottom:40px;
+	margin: 0 auto;
+	background: rgba(50%,50%,50%,0.5);
+}
+
+
+
+div.footer{
+
+	padding: 0 0 10px 0;
+	width:900px;
+	height:200px;
+	margin: 0 auto;
+	
+}
+
+div.footer div.images{
+	margin:10px;
+	float: left;
+	width:280px;
+
+
+}
+
+div.footer div.images img{
+	margin: 10px 0 0 0;
+}
+
+div.footer div.images img:hover{
+	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.6);
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.6);
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.6);
+}
+
+
+div.images a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+div.images a h2{
+	font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	padding:1px 0 ;
+	margin: 0 0 0 3px;
+
+}
+		
+div.images span{
+	height:20px;
+	width:20px;
+	float: left;
+	text-indent:150%;
+	overflow:hidden;
+	background: url('css/puceh2.png') 0 0 no-repeat;
+	padding-right:5px;
+	
+}
+
+img.vitrine{
+	padding:20px 0 40px 0;
+}
+
+div.social a span{
+	
+}
+
+	
+	

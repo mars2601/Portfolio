@@ -238,7 +238,8 @@ div.project{
        @include span(first 2);
     }
     .infos_about{
-       @include span(last 6);
+       @include span(first 4);
+       margin-left: gutter();
     }
   }
 }
@@ -366,7 +367,7 @@ div.project{
        }
     }
     .infos_about{
-       @include span(8);
+       @include span(7);
     }
   }
  }

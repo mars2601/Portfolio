@@ -1,9 +1,10 @@
 <?php get_header(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/backgroundMove.js"></script>
 	<div class="content">
-		<div class="presentation">
-			<div class="name_desc content_box">
-				<h1>Marcel Pirnay</h1>
-				<p class="domain">Web<span>&</span>Graphic<span>&</span>Developpement</p>
+		<div class="presentation" id="background" itemscope itemtype="http://schema.org/Person">
+			<div class="name_desc content_box" >
+				<h1 itemprop="name">Marcel Pirnay</h1>
+				<p class="domain" itemprop="jobTitle">Web<span>&</span>Graphic<span>&</span>Developpement</p>
 			</div>
 			<div class="skills content_box">
 				<h2><span class="line lt"></span>Mes compétences<span class="line rt"></span></h2>
@@ -11,32 +12,32 @@
 						<div class="icon">
 							<div title="Code: 0xe80f" class="the-icons span3"><i class="icon-desktop"></i></div>
 						</div>
-							<h3>Web design</h3>
-							<p><span>___</span></br>Des designs unique selon vos besoins et vos attentes. Construisons ensembles votre site internet, et offrez vous une place de choix sur la toile. et offrez vous une place de choix sur la toile.</p>
+							<h3 itemprop="makesOffer">Web design</h3>
+							<p><span>___</span></br>Des designs uniques selon vos besoins et vos attentes. Construisons ensembles votre site internet afin de répondre au besoins du marché et afin d'obtenir une présence considérable sur la toile</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=3'); ?>" class="link">En voir plus</a></div>
 					</div>
-					<div class="boxes">
+					<div class="boxes" itemscope itemtype="http://schema.org/Brand">
 						<div class="icon">
 							 <div title="Code: 0xe80e" class="the-icons span3"><i class="icon-rocket"></i></div>
 						</div>
-							<h3>Intégration</h3>
-							<p><span>___</span></br>Des sites web ergonomiques, accessibles et efficaces pour assurer une performance. Tout cela avec les outils appropriés : (X)HTML, HTML5, SASS/LESS, CSS, JavaScript, Jquery, Wordpress,...</p>
+							<h3 itemprop="makesOffer">Intégration</h3>
+							<p><span>___</span></br>Des sites web ergonomiques, accessibles sur base de votre identité visuelle. Tout cela avec les outils appropriés : (X)HTML, HTML5, SASS/LESS, CSS, JavaScript, Jquery, Spip, Wordpress,...</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=6'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
 						<div class="icon">
 							<div title="Code: 0xe80a" class="the-icons span3"><i class="icon-wrench"></i></div>
 						</div>
-							<h3>Developpement</h3>
-							<p><span>___</span></br>Une Applications, un jeux ou un site spécifique pour mettre en oeuvre un nouveau concept. Désormais tout est possible sur internet et les outils PHP, Laravel, GuntJS, NodeJS, Javascript, SVG, ...</p>
+							<h3 itemprop="makesOffer">Developpement</h3>
+							<p><span>___</span></br>Une Applications, un jeux ou un site spécifique pour mettre sur pied votre nouveau concept. Désormais tout est possible avec internet et les outils PHP, Laravel, GuntJS, NodeJS, Javascript, SVG, ...</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=8'); ?>" class="link">En voir plus</a></div>
 					</div>
 					<div class="boxes">
 						<div class="icon">
 							<div title="Code: 0xe800" class="the-icons span3"><i class="icon-flash"></i></div>
 						</div>
-							<h3>Graphisme</h3>
-							<p><span>___</span></br>N'hésitez pas a me confier votre identité visuelle et vos supports grahique. La première impression que vous donnerez au grand public est imporantante.</p>
+							<h3 itemprop="makesOffer">Graphisme</h3>
+							<p><span>___</span></br>N'hésitez pas a me confier la création de votre identité visuelle et de vos supports grahique. La première impression que vous donnerez au grand public est imporantante, Ne la négligé pas!</p>
 							<div class="link_skills"><a href="<?php echo (site_url().'/tag/?tag_id=5'); ?>" class="link">En voir plus</a></div>
 					</div>
 			</div>
@@ -70,7 +71,7 @@
 					?>
 					<div class="boxes">
 						<section class="works_infos">
-							<a class="link" href="<?php echo get_page_uri( $page_voir_realisation_id ) ?>?post_id=<?php the_ID(); ?>">
+							<a alt="<?php the_title(); ?>" title="voir la réalisation <?php the_title(); ?>" class="link" href="<?php echo get_page_uri( $page_voir_realisation_id ) ?>?post_id=<?php the_ID(); ?>">
 								<h3><span>//&nbsp;&nbsp;</span><?php the_title(); ?></h3> 
 							</a>
 							<p><?php the_field('sous-titre'); ?></p>
@@ -85,7 +86,7 @@
 			</div>
 				<div class="content_link">
 						<div class="border_link">
-							<a href="<?php echo get_page_uri( $page_realisation_id ); ?>" class="link works_links">Tous les travaux</a>
+							<a alt"toutes les réalisations" title="Voir toutes les réalisations" href="<?php echo get_page_uri( $page_realisation_id ); ?>" class="link works_links">Toutes les réalisations</a>
 						</div>
 					</div>
 			</div>

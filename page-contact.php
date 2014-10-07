@@ -23,8 +23,8 @@
 								$passage_ligne = "\n";
 							}
 
-							$header = "From: \"MarcelP\"<pirnay.m@gmail.com>".$passage_ligne;
-							$header .= "Reply-to: \"MarcelP\" <pirnay.m@gmail.com>".$passage_ligne;
+							$header = "From: \"$nom\"$email".$passage_ligne;
+							$header .= "Reply-to: \"$nom\"$email".$passage_ligne;
 							$header .= "MIME-Version: 1.0".$passage_ligne;
 							$header .= "Content-Type: multipart/alternative;".$passage_ligne." boundary=\"$boundary\"".$passage_ligne;
 						 
@@ -59,15 +59,13 @@
 								      <fieldset>
 								      	<label for="nom">Votre nom et prénom: </label><input type="text" name="nom" size="30" /></br>
 								      	<label for="email">Votre email: </label><input type="text" name="email" size="30" /></br>
-								      	<p>N'hésitez pas à me contacter pour d'éventuelles questions, réactions, devis,... N'ayez pas peur !</p>
+								      	<p>N'hésitez pas à me contacter pour d'éventuelles questions, réactions, devis,...</p>
 								      </fieldset>
 								      <fieldset>
 								      	<label for="">Message :</label>
-								     	<textarea name="message" style="width:100%;	" rows="10"></textarea>
-								      	<p><input type="submit" name="submit" class="link" value="Envoyer" /></p>
+								     	<textarea name="message" rows="10"></textarea>
+								      	<p><input type="submit" name="submit" title="Envoyer le mail" class="link" value="Envoyer" /></p>
 								      </fieldset>
-								      
-								      
 								    </form>
 								</div>
 							</div>

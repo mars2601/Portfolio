@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+
+
+div.width{
+	width: 90%;
+	margin: 0 auto;
+}
+
+div.header{
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	background-color: white;
+}
+
+div.logo{
+	display: inline-block;
+	width: 20%;
+}
+
+div.logo h1 a{
+	display: block;
+	width: 120px;
+	height: 79px;
+	text-indent: -1001%;
+	overflow: hidden;
+	background: url(../img/logo.png) 0 0 no-repeat;
+}
+div.navbar{
+	width: 80%;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px 0 0 0;
+}
+div.header ul li{
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 10px 10px 9px 10px;
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 1.3em;
+}
+ div.header ul li a{
+	text-decoration: none;
+	color: #50026E;
+}
+div.header ul li:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+
+}
+ul.navbar1{
+	height: 55px;
+	font-size: 1.5em;
+}
+ div.header ul.navbar1 li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ul.navbar2{
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 40px;
+	margin-top: -2px;
+}
+
+div.ariane {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 60px;
+	font-family: 'Allerta', sans-serif;
+
+}
+div.ariane span{
+	display: inline-block;
+	padding: 4px 0 4px 4px;
+	font-size: 0.9em;
+}
+div.ariane span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+div.ariane span:first-child{
+	padding-left: 2px;
+}
+div.ariane span+span:before{
+	content: "> ";
+
+}
+div.ariane p{
+	float: right;
+	color: rgba(0, 0, 0, 0.7);
+}
+div.ariane p a{
+	color:#50026E;
+	padding-right: 3px;
+
+}
+div.ariane p a:hover{
+	color:#7B3E98;
+}
+
+
+div.leftbar{
+	width:20%;
+	display: inline-block;
+	vertical-align: top;
+}
+div.leftbars{
+	margin-top: 20px;
+	border-top:1px solid black;
+	padding:0 0 20px 0;
+	font-family: 'Allerta', sans-serif;
+	background-color: rgba(100, 100, 100, 0.2);
+}
+div.leftbar h2{
+	font-size: 1.2em;
+	padding: 5px 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+div.leftbar ul{
+	margin-top: 5px;
+}
+div.leftbar ul li{
+	padding: 5px 15px;
+}
+div.leftbar ul li a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.8);
+	-webkit-transition: all 0.4s ease;
+-moz-transition: all 0.4s ease;
+-ms-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
+}
+div.leftbar ul li a:hover{
+	padding-left: 10px;
+}
+div.leftbar ul li a span{
+	color:rgba(100, 100, 100, 0.6);
+	padding: 0 5px;
+	font-size: 0.9em;
+}
+
+
+
+
+div.rightbar{
+	width: 78%;
+	margin-left: 2%;
+	display: inline-block;
+	margin-top: 10px;
+}
+div.rightbar div.rightbars{
+	height: 200px;
+	margin: 10px 0;
+}
+
+div.rightbar div.articles{
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+	height: 100%;
+}
+
+div.articles img{
+	width: 100%;
+}
+
+div#in{
+	margin:10px 2%;
+}
+
+div.rightbar div.presentation{
+	background: url(../img/garde-robe.jpg) no-repeat;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+div.rightbar div.presentation h3{
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	top: 0;
+	position: relative;
+	font-family: 'Metrophobic', sans-serif;
+	font-size: 2em;
+	color: white;
+	border-top: 1px solid black;
+}
+
+div.articles+div.articles+div.articles+div.articles+div.articles{
+	width: 66%;
+	margin-right: 0;
+	margin-left: 2%;
+}
+
+div.infos{
+	width: 100%;
+	background-color:rgba(0, 0, 0, 0.2);
+
+}
+div.infos p, div.infos h3{
+	padding: 4px;
+	padding-left: 5px;
+	font-family: 'Allerta', sans-serif;
+
+
+}
+div.infos p{
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 0.9em;
+}
+div.infos p span{
+	color:black;
+	font-weight: bold;
+}
+div.infos h3{
+	font-size: 1.2em;	
+ }
+
+ form{
+ 	float: right;
+ 	margin-top: -40px;
+	color: rgba(0, 0, 0, 0.8);
+ }
+
+  form label{
+  	font-family: 'Metrophobic', sans-serif;
+	font-size: 1.2em;
+  }
+
+  form input{
+  	border:1px solid  #50026E;
+  	padding: 4px;
+  	border-radius: 4px;
+  	box-shadow: none;
+
+  }
+
+
+a.voir{
+	font-family: 'Allerta', sans-serif;
+  	font-size: 0.9em;
+	display: block;
+	background-color: #D35A93;
+	position: relative;
+	padding: 6px;
+	width: 110px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	border-radius:4px;
+	float: right;
+	margin-top: -40px;
+	margin-right: 10px;
+	border-bottom: 3px solid #50026E;
+
+	-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-ms-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+a.voir:hover{
+	border-bottom: 1px solid #7B3E98;
+	padding-bottom: 8px;
+	margin-top:-38px;
+	background-color: #CC6699;
+}
+
+img.pres{
+	width: 100%;
+	margin-top: 30px;
+	padding: 0 5px;
+}
+
+div.footer{
+	height: 150px;
+	background-color: #E5E5E5;
+	margin-top: 100px;
+}
+div.footer p{
+	width: 100%;
+	text-align: center;
+	padding: 100px 0 0 0;
+}

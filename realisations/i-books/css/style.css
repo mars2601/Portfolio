@@ -1,0 +1,1049 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+/* ------------------------------- FIN RESET DE MEYER ------------------------------------*/
+
+
+body{
+	font-size:16px;
+	background-color: #f7f7f7;
+}
+div.grid{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: RopaSans;
+    src: url(../fonts/RopaSans-Regular.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family: Rockwell;
+    src: url(../fonts/Rockwell-Light.ttf);
+    font-weight:400;
+}
+
+
+
+/* -------------------------------- HEADER -----------------------------------*/
+/* -------------------------------- HEADER -----------------------------------*/
+/* -------------------------------- HEADER -----------------------------------*/
+/* -------------------------------- HEADER -----------------------------------*/
+div#header{
+	height:80px;
+	width: 1100px;
+	margin: 0 auto;
+}
+div#header h1{
+	display: inline-block;
+	background: url('../img/css/header2.png') no-repeat;
+	width: 1000px;
+	height: 60px;
+	position: relative;
+	top:10px;
+	left:-10px;
+	font:2.25em Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	padding:8px 0 0 55px;
+	-webkit-transition: all 0.7s ease;
+-moz-transition: all 0.7s ease;
+-ms-transition: all 0.7s ease;
+-o-transition: all 0.7s ease;
+transition: all 0.7s ease;
+	overflow: hidden;
+	
+
+}
+div#header h1 p{
+	display: inline-block;
+	width: 600px;
+	margin-left: 50px;
+}
+
+div#header form.title{
+	display: inline-block;
+}
+div#header h1 span{
+	display: inline-block;
+	text-indent: -220px;
+	overflow: hidden;
+	vertical-align: top;
+	color: white;
+	font-family: RopaSans, sans-serif;
+	padding-top: 4px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+div#header h1:hover span{
+	display: inline-block;
+	text-indent: -0;
+
+
+
+}
+div#header h1:hover{
+	padding-left: 70px;
+
+}
+div#header a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	width: 60px;
+}
+div.bann{
+	width: 100px;
+	height: 280px;
+	background-image: url('../img/css/bann.png');
+	margin-top: -20px;
+}
+form.general-search{
+	float: right;
+	position: relative;
+	right:0;
+	margin-top:-40px;
+}
+form.general-search input[type='text']{
+	height: 19px;
+	background-color: white;
+	border: none;
+	margin: 0;
+	padding: 2px 5px;
+	border-top: 1px solid #F3762C;
+	border-bottom: 1px solid #F3762C;
+	border-left: 1px solid #F3762C;
+}
+form.general-search input[type='submit']{
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	border: none;
+	border-radius: none;
+	background: url('../img/css/submit.png') repeat-x;
+	text-indent: -10001%;
+	overflow: hidden;
+	margin: 0;
+	background-position: -1px -1px;
+}
+form.general-search input[type='submit']:hover{
+	cursor: pointer;
+}
+form.bigger {
+	position: auto;
+	margin-top: 0;
+	float: none;
+}
+form.bigger label{
+	display: inline-block;
+	height: 24px;
+	width: 180px;
+	background-color: #3366A3;
+	padding: 8px;
+	margin: 0;
+	vertical-align: top;
+	font: 1.5em RopaSans, sans-serif;
+	color: white;
+	
+}
+form.bigger input[type='text']{
+	height: 34px;
+	width: 400px;
+	border-left: 0;
+	font: 1.5em RopaSans, sans-serif;
+}
+form.bigger input[type='submit']{
+	height: 41px;
+	width: 41px;
+	position: relative;
+	top: -3px;	
+	border-top:1px solid #3366A3;
+}
+
+
+div.head{
+	background-color: #6699cc;
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+
+/* -------------------------------- FIN HEADER -----------------------------------*/
+/* -------------------------------- FIN HEADER -----------------------------------*/
+/* -------------------------------- FIN HEADER -----------------------------------*/
+/* -------------------------------- FIN HEADER -----------------------------------*/
+
+/* -------------------------------- BODY -----------------------------------*/
+/* -------------------------------- BODY -----------------------------------*/
+/* -------------------------------- BODY -----------------------------------*/
+/* -------------------------------- BODY -----------------------------------*/
+div.grid div#content div.distributeur ul#icon li{
+	border-radius: 150px;
+	margin-right:20px;
+	width: 250px;
+	height: 250px;
+
+}
+div.grid div#content div.distributeur ul#icon li a{
+	background: none;
+	width: auto;
+}
+div.grid div#content div.distributeur ul#icon li a h4{
+	top:10px;
+
+}
+div.grid div#content div.distributeur ul#icon li a img{
+	width: 200px;
+	height: 130px;
+	padding: 65px 25px;
+}
+
+div.grid div#content div.distributeur ul#icon li+li a{
+	background: url('./img/books/css/object.png');
+	
+}
+
+/* -------------------------------- BODY MENU -----------------------------------*/
+
+/* --------------------------------  MENU DEROULANT JQUERY-----------------------------------*/
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: black;
+  width: 200px;
+  font: 1.2em "Trebuchet MS", sans-serif;
+}
+.navigation a, .navigation span {
+  display: block;
+  padding: 10px 0;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+.navigation .toggleSubMenu{
+	margin-top: 0;
+	font-size: 1.1em;
+}
+.navigation .toggleSubMenu:first-child{
+	margin-top: 5px;
+	font-size: 1.1em;
+}
+.navigation a:active{
+	color: #F4772D;
+}
+.navigation .subMenu {
+  font-size: .8em;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+.navigation ul.subMenu a {
+  padding: 3px 0;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #F7F7F7;
+  -webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.navigation ul.subMenu a:hover{
+	color: #F27330;
+	padding: 3px;
+	background-color: #EAEAEA;
+}
+div#body div#menu ul.subMenu li.menu-item a{
+	background-image: url('../img/css/icon-sprite.png');
+	background-position: -1px -492px;
+	padding-left: 36px;
+	margin-top: 5px;
+	margin-left: 2px;
+	border-radius: 15px 0 0 15px;
+}
+div#body div#menu ul.subMenu li.menu-item:first-child+li.menu-item a{
+	background-position: -1px -455px;	
+}
+div#body div#menu ul.subMenu li.menu-item:first-child+li.menu-item+li.menu-item a{
+	background-position: -1px -304px;	
+}
+div#body div#menu ul.subMenu li.menu-item:first-child+li.menu-item+li.menu-item+li.menu-item a{
+	background-position: -1px -338px;	
+}
+div#body div#menu ul.subMenu li.menu-item:first-child+li.menu-item+li.menu-item+li.menu-item+li.menu-item a{
+	background-position: -1px -413px;	
+}
+div#body div#menu ul.subMenu li.menu-item:first-child+li.menu-item+li.menu-item+li.menu-item+li.menu-item+li.menu-item a{
+	background-position: -1px -375px;	
+}	
+
+div#body div#menu ul.subMenu li.menu-item:first-child a{ 
+	margin-top: 20px;
+	color: rgba(0, 0, 0, 0.9);
+  	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+div#body div#menu ul.subMenu li.menu-item:first-child a:hover{ 
+	color: #F27330;
+}
+/* --------------------------------  FIN MENU DEROULANT JQUERY-----------------------------------*/
+
+/* --------------------------------  DECONEXION-----------------------------------*/
+div.log{
+	margin-top: -40px;
+	margin-right: 30px;
+	float: right;
+
+}
+div#header div.log a{
+	padding: 3px 10px;
+	background-color: rgba(200, 200, 200, 1);
+	border-bottom:2px solid rgba(100, 100, 100, 1);
+	border-radius: 2px;
+	color: rgba(50, 50, 50, 0.8);
+	display: block;
+	width: auto;
+	font: 1em RopaSans, sans-serif;
+
+}
+div#header div.log a:hover{
+	background-color: rgba(100, 100, 100, 1);
+	color: white;
+
+
+}
+
+/* --------------------------------  FIN DECONEXION-----------------------------------*/
+
+
+
+
+
+
+div#body div#menu{
+	width: 159px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px 0;
+}
+div#body div#menu h2{
+	font: 2em RopaSans, sans-serif;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+
+	background: url('../img/css/icon-sprite.png') 0 -255px no-repeat;
+	padding-left:45px;
+	border-radius:35px 0 0 35px;
+}
+div#body div#menu h2:hover{
+	color: #F27330;
+	padding-left: 40px;
+	background-color: #CCCCCB;
+}
+div#body div#menu h2.autresChemins{
+	margin-top: 40px;
+	font-size: 1.75em;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+div#body div#menu ul#navbar li a{
+	font:1.40em Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+	margin: 5px 0;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+div#body div#menu ul#navbar li a:hover{
+	color: #E55624;
+	margin-left: 5px;
+}
+
+
+
+/* -------------------------------- BODY CONTENT -----------------------------------*/
+div#body div#content{
+	width: 880px;
+	display: inline-block;
+	vertical-align: top;
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	right bottom,
+	color-stop(0, #E9E9E9),
+	color-stop(1, #F7F7F7)
+);
+background-image: -o-linear-gradient(right, #E9E9E9 0%, #F7F7F7 100%);
+background-image: -moz-linear-gradient(right, #E9E9E9 0%, #F7F7F7 100%);
+background-image: -webkit-linear-gradient(right, #E9E9E9 0%, #F7F7F7 100%);
+background-image: -ms-linear-gradient(right, #E9E9E9 0%, #F7F7F7 100%);
+background-image: linear-gradient(to right, #E9E9E9 0%, #F7F7F7 100%);
+	padding:0 30px;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	padding-bottom: 160px;
+
+}
+div#content div.parts{
+	width: 100%;
+	padding: 30px 0 5px 0;
+
+}
+div.grid div#content div.book-infos{
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	margin:0 10px 40px 10px;
+	border-top: none;
+}
+div.grid div#content div.book-infos h3{
+	font-size: 2em;
+	padding: 10px 0 10px 55px;
+	color: rgba(0, 0, 0, 0.7);
+}
+div.grid div#content div.book-infos:nth-child(2) h3{
+	background: url('../img/css/icon-sprite.png') 0px -200px no-repeat;
+}
+div.grid div#content div.book-infos:nth-child(3) h3{
+	background: url('../img/css/icon-sprite.png') -235px -200px no-repeat;
+}
+div.grid div#content div.book-infos:nth-child(4) h3{
+	background: url('../img/css/icon-sprite.png') -703px -200px no-repeat;
+	margin-bottom: 20px;
+}
+div#content div.book-infos ul.list li{
+	background-color: rgba(15, 15, 15, 0.4);
+}
+div#content div.book-infos:last-child{
+	display: inline;
+}
+div#content div.book-infos:last-child ul li{
+	display: inline-block;
+	background-color: rgba(15, 15, 15, 0.4);
+	margin: 5px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+
+}
+div#content div.book-infos:last-child ul li a{
+	text-decoration: none;
+	color: white;
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.3);
+	display: block;
+	padding: 5px;
+	font: 1.5em RopaSans, sans-serif;
+	
+}
+
+div#content div.book-infos:last-child ul li:hover{
+	background-color: #6699CC;
+
+}
+div#content div.book-infos:last-child ul li:first-child{
+	margin-left: 0;
+}
+
+
+div#content div.parts:first-child{
+	padding-top: 20px;
+}
+div#content div.parts:nth-of-type(n+2){
+	border-top:1px solid rgba(101, 153, 205, 0.5);
+}
+div#content div.parts h3{
+	font: 2.2em RopaSans, sans-serif;
+}
+div#content div.parts h3 span{
+	color: #3366A4;
+}
+div#content div.parts p{
+	padding: 20px 0;
+	font:1.65em Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+div#content div.parts p span{
+	color: #336699;
+}
+div#content div.parts p#intro{
+	width: 440px;
+	display: inline-block;
+}
+/* -------------------- Book illustration -----------------------------*/
+
+img#book{
+	width: 400px;
+	height: 260px;
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 20px;
+	vertical-align:top;
+
+}
+
+
+/* -------------------- Icon -----------------------------*/
+div#content div.iconographic{
+	margin-bottom: 80px;
+	padding-top: 20px;
+}
+div#content div.iconographic ul#icon li{
+	display: inline-block;
+	width: 195px;
+	height: 195px;
+	background-color: #cccccc;
+	border-radius:150px;
+	margin:0 9px;
+	border: 3px solid white;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+	vertical-align: top;
+
+
+}
+div#content div.iconographic ul#icon li:first-child{
+	margin-left: 0;
+}
+div#content div.iconographic ul#icon li:last-child{
+	margin-right: 0;
+}
+
+div#content div.iconographic ul#icon li a{
+	width: 195px;
+	height: 195px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	background: url('../img/css/icon-sprite.png') 1px -10px no-repeat;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+	border-radius:150px;
+
+}
+div#content div.iconographic ul#icon li+li a{
+	background: url('../img/css/icon-sprite.png') -235px -10px no-repeat;
+}
+div#content div.iconographic ul#icon li+li+li a{
+	background: url('../img/css/icon-sprite.png') -470px -10px no-repeat;
+}
+div#content div.iconographic ul#icon li+li+li+li a{
+	background: url('../img/css/icon-sprite.png') -702px -10px no-repeat;
+}
+div#content div.iconographic ul#icon li:hover{
+	border: 3px solid #6699CC;
+}
+div#content div.iconographic ul#icon li:hover a{
+	color: #336699;
+}
+div#content div.iconographic ul#icon li:hover a h4{
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+div#content div.iconographic ul#icon li a h4{
+	font: 2em RopaSans, sans-serif;
+	position: relative;
+	top: 220px;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+
+}
+
+
+
+/* -------------------------------- GENRE INDEX -----------------------------------*/
+/* -------------------------------- GENRE INDEX -----------------------------------*/
+/* -------------------------------- GENRE INDEX -----------------------------------*/
+/* -------------------------------- GENRE INDEX -----------------------------------*/
+
+ul.list h4{
+	font: 1.3em RopaSans, sans-serif;
+	color: black;
+	text-decoration: none;
+	width: 172px;
+	margin: 0 auto 10px auto;
+	padding-top: 5px;
+	text-align: left;
+	border-top: 1px solid rgba(100, 100, 100, 0.6);
+
+}
+ul.list h4.books{
+	font-size: 1.2em;
+	vertical-align: bottom;
+	display: inline-block;
+}
+ul.list h5{
+	font: 1.3em RopaSans, sans-serif;
+	text-decoration: none;
+	width: 162px;
+	padding: 0 0 10px 20px;
+	text-align: left;
+	text-shadow:1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+ul.list li{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	width: 215px;
+	min-height: 180px;
+	padding-bottom: 15px;
+	background-color: rgba(150, 150, 150, 0.3);
+
+}
+ul.list li:first-child{
+	margin-left: 0;
+}
+ul.list li:last-child{
+	margin-right: 0;
+}
+
+ul.list li a{
+	text-decoration: none;
+	text-align: center;
+}
+ul.list li a:last-child{
+	display: block;
+	width: 215px;
+	height: 325px;
+}
+
+
+ul.list li img{
+	width: 173px;
+	max-height: 156px;
+	margin: 20px 22px 5px 22px;
+	box-shadow: 1px -1px 2px solid black;
+	border: 1px solid #336699;
+
+
+}
+div#content ul.list{
+	padding-top: 10px;
+}
+div#content ul.books li{
+	height: 360px;
+	border-bottom:1px solid rgba(100, 100, 100, 0.8);
+}
+div#content ul.books li img{
+	max-height: 250px;
+}
+
+ul.list li:nth-child(2n){
+	background-color: rgba(150, 150, 150, 0.2);
+}
+ul.list li:hover{
+	background-color: rgba(150, 150, 150, 0.5);
+
+}
+ul.list li:hover h4{
+	color:#336699;
+}
+
+ul.list li:hover img{
+	box-shadow: 1px 1px 3px #336699;
+}
+
+
+
+/* -------------------------------- detail -----------------------------------*/
+/* -------------------------------- detail -----------------------------------*/
+/* -------------------------------- detail -----------------------------------*/
+
+/* -------------------------------- Edit book -----------------------------------*/
+
+
+
+div.detail img{
+	width: 260px;
+	display: inline-block;
+	padding: 5px;
+	background-color: #ccc;
+	border: 1px solid #E55624;
+}
+div.detail div.infos{
+	display: inline-block;
+	vertical-align: top;
+	padding:0 0 0 20px;
+	width: 546px;
+}
+div.detail h3{
+	
+}
+div.detail h3 span{
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 0.5em;
+}
+
+form#editBook legend{
+	font:1.75em RopaSans, sans-serif;
+	padding:0 0 30px 0;
+}
+form#editBook label, h2.label{
+	font:1.25em Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	padding: 10px 0;
+	width: 100px;
+	display: inline-block;
+	vertical-align: top;
+}
+form#editBook input, form#editBook textarea, form#editBook select{
+	margin: 10px;
+	font: 1.25em RopaSans, sans-serif;
+ 	width: 440px;		
+}
+form#editBook label[for='front_cover']{
+	width: 270px;
+}
+form#editBook textarea{
+ 	font-size: 1em;
+}
+form#editBook input[type='file']{
+	margin-left: 0;
+	padding-left: 0;
+	padding-top: 0;
+	margin-top: 0;
+	font-size: .9em;
+	width: 270px;
+}
+fieldset+fieldset{
+	text-align: center;
+}
+
+
+form#editBook div.infos{
+	width: 570px;
+}
+div.editImg{
+	width: 270px;
+	display: inline-block;
+}
+div.editImg img{
+	width: 258px;
+	padding: 5px;
+}
+div.editTitle{
+}
+
+div.menuadd div.add p a{
+	margin-top: 0;
+	float: none;
+	margin: 5px;
+}
+div.add p a{
+	float: right;
+	background-color: #6799CB;
+	color: white;
+	padding: 6px 15px;
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0px #E55625;
+	margin-top:-35px;
+	font:26px Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+div.index p a{
+	margin-top: 0;
+}
+div.elements p a{
+	margin-top:15px;
+}
+div.add.index p a{
+	margin-top: 10px;
+}
+div.add p a:hover{
+	background-color: #E55625;
+}
+
+/* -------------------------------- ADMIN -----------------------------------*/
+/* -------------------------------- ADMIN -----------------------------------*/
+/* -------------------------------- ADMIN -----------------------------------*/
+
+a.admin{
+	display: inline-block;
+	position: relative;
+	left: 58px;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	overflow: hidden;
+	text-indent: -1001%;
+	background:rgba(255, 255, 255, 0.6) url('../img/css/adminSprite.png') 0 0 no-repeat;
+
+	margin-bottom: -24px;
+
+}
+a.admin+a.admin{
+	background:rgba(255, 255, 255, 0.6) url('../img/css/adminSprite.png') -30px 0 no-repeat;
+
+}
+a.admin+a.admin:hover{
+	background-color: #3366A3;
+}
+a.admin:hover{
+	background-color: #3366A3;
+}
+
+/* -------------------------------- CONNECT -----------------------------------*/
+div#content div.intro{
+	width: 400px;
+	display: inline-block;
+	padding:0 30px 0 0;
+}
+div#content div.intro p{
+	font:1.6em RopaSans, sans-serif;
+	
+}
+div.intro p span{
+	font: 1.4em RopaSans, sans-serif;
+
+}
+
+div.logUser{
+	vertical-align: top;
+}
+form.connect{
+	font: 1.2em RopaSans, sans-serif;
+	width: 100%;
+	vertical-align: top;
+	border-bottom: 1px solid rgba(101, 153, 205, 0.2);
+	padding-bottom: 5px;
+}
+form.connect+form.connect{
+	margin-top: 30px;
+}
+
+
+form.connect legend{
+	font-size: 1.5em;
+	padding: 10px 0 10px 0;
+}
+form.connect input, form.connect label{
+	padding: 5px;
+	margin:0;
+}
+form.connect input{
+	font-size: 0.8em;
+	color: #6699CC;
+}
+form.connect input[type='text'], form.connect input[type='password']{
+	display: block;
+	width: 600px;
+}
+form.connect label{
+	display: inline-block;
+	width: 605px;
+	height: 20px;
+	padding-left: 5px;
+	background-color: rgba(100, 100, 100, 0.1);
+	margin-top: 5px;
+}
+form.connect span{
+	color:red;
+}
+
+div#content div.parts p.error-message{
+	background-color: #ff4040;
+	color: white;
+	font: 0.8em RopaSans, sans-serif;
+	padding: 5px;
+	position: absolute;
+	border-radius: 4px;
+	left: 800px;
+	margin-top: 25px;
+	border:1px solid red;
+}
+
+form.topbar{
+	display: inline-block;
+}
+img.welcome{
+	margin-left: -30px;
+
+}
+p.welcome{
+	font: 2.1em RopaSans, sans-serif;
+	padding: 20px 20px 0 0;
+}
+form.connect input[type='submit'], form#editBook input[type='submit']{
+	border: none;
+	border-radius: none;
+	position: relative;
+	background-color: #6799CB;
+	color: white;
+	padding: 6px 15px;
+	display: block;
+	text-align: center;
+	border-radius: 2px;
+	box-shadow: 1px 1px 0px #E55625;
+	font:1.3em Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+form.connect input[type='submit']:hover, form#editBook input[type='submit']:hover{
+	background-color: #E55625;
+	cursor:pointer;
+}
+
+
+
+
+/* -------------------------------- PROFIL -----------------------------------*/
+
+div#content div.parts img#profil{
+	margin-top: -80px;
+	padding: 2px;
+	border:1px solid rgba(101, 153, 205, 0.5);
+	background-color: white;
+	width: 180px;
+	height: 180px;
+	float: right;
+}
+
+h4.profil{
+	padding: 5px 0;
+	font: 1.4em RopaSans, sans-serif;
+	color: rgba(0, 0, 0, 0.8);
+
+}
+
+div#content div.parts p.profil{
+	padding-top: 60px;
+}
+
+
+
+/* -------------------------------- FIN BODY -----------------------------------*/
+/* -------------------------------- FIN BODY -----------------------------------*/
+/* -------------------------------- FIN BODY -----------------------------------*/
+/* -------------------------------- FIN BODY -----------------------------------*/
+
+/* -------------------------------- FOOTER -----------------------------------*/
+/* -------------------------------- FOOTER -----------------------------------*/
+/* -------------------------------- FOOTER -----------------------------------*/
+/* -------------------------------- FOOTER -----------------------------------*/
+
+
+
+footer{
+	width: 100%;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+footer div.footer{
+	width: 1100px;
+	margin: 0 auto;
+}
+footer div.footer p{
+	width: 100%;
+	text-align: center;
+	padding-top:140px;
+	font: 1em RopaSans, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -39,8 +39,8 @@
 												?>
 							<div class="boxes">
 								<section class="works_infos">
-									<a class="link" href="../<?php echo get_page_uri( $page_voir_realisation_id ); ?>?post_id=<?php the_ID(); ?>">
-										<h3><span>_</span><?php the_title(); ?></h3> 
+									<a alt="<?php the_title(); ?>" title="voir la réalisation <?php the_title(); ?>" class="link" href="../<?php echo get_page_uri( $page_voir_realisation_id ); ?>?post_id=<?php the_ID(); ?>">
+										<h3><span>//&nbsp;&nbsp;</span><?php the_title(); ?></h3> 
 									</a>
 									<p><?php the_field('sous-titre'); ?></p>
 								</section>
@@ -63,7 +63,7 @@
 										foreach ($tags as $t) {
 											?>
 												<li>
-													<a href="?tag_id=<?php echo $t->term_id; ?>">
+													<a alt"<?php echo $t->name; ?>" title="voir les réalisations de <?php echo $t->name; ?>" href="?tag_id=<?php echo $t->term_id; ?>">
 														<div title="Code:" class="the-icons span3"><i class="icon-<?php echo $t->description ?>"></i></div>
 													<?php echo $t->name; ?></a>
 												</li>

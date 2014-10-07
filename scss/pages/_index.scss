@@ -3,7 +3,7 @@
 	.presentation{
 		min-height: 270px;
 		padding: 40px 0 0 0;
-		background: url("./img/background1.jpg");
+		background: url("./img/background2.jpg");
 		.title{
 			margin-top: -50px;
 			position: relative;
@@ -65,7 +65,7 @@ h2{
 	display:inline-block;
 	padding: 10px;
 	font-size: 2em;
-	padding: 20px 0 45px 0;
+	padding: 20px 0 30px 0;
 	margin:20px 0 10px 0;
   	color: black;
   	font-style: normal;
@@ -125,6 +125,7 @@ h2{
 //	background-color:rgba(0, 0, 0, 0.5);
 	margin-top: 30px;
 	.boxes{
+		margin-top: 40px;
 	}
 	.boxes>.icon{
 		background-color:$c4;
@@ -142,7 +143,7 @@ h2{
     }
     .boxes:hover .icon{
 		border:4px solid $c2;
-		@include transition(all, 0.4s, ease-in-out);
+		@include transition(all, 0.2s, ease-in-out);
 		color:$c2;
 		font-size:3em;
 	}
@@ -313,6 +314,13 @@ h3, h4{
 	color:black;
     @include font($header_font);
 }
+.project{
+	.border_link{
+		width: 50%;
+		margin-top: 40px;
+		float: left;
+	}
+}
 .border_link{
 	border-radius: $border-radius $border-radius $border-radius $border-radius;
 	@include border-shadow(inset, 2px, 2px, 5px, 1px, $c6);
@@ -349,7 +357,7 @@ h3, h4{
 	.link{
 		position: absolute;
 		bottom: 30px;
-		margin-bottom: gutter()*2;
+		margin-bottom: gutter()*5/2;
 		left:0;
 
 	}
@@ -358,6 +366,7 @@ h3, h4{
 
 @media screen and (max-width: 1000px) {
 h2{
+	margin-top: 60px;
 	span{
     	width: 5%;
     }
@@ -395,6 +404,11 @@ h2{
 }
 
 @media screen and (max-width: 1000px) {
+.content{
+	.presentation{
+		background: url("./img/background2.jpg");
+	}
+}
 	h2{
 		font-size: 1.8em;
 		span{

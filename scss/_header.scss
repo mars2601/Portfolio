@@ -2,12 +2,16 @@
 		div.logo{
 			position: absolute;
 			padding-left: 60px;
+			height: 50px;
+			overflow: hidden;
 		}
 		position:relative;
+		z-index: 1000;
 		width: 100%;
 		background-color: $c0;
 		padding:0;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		@include transition(all, 0.2s, ease-in-out);
 		.navbar{
 			@include padding-canvas($canvas-border);
 			.nav{
@@ -35,7 +39,7 @@
 				}
 			}
 		}
-	}	
+	}
 
 @media screen and (max-width: 1000px) {
 		.header{
